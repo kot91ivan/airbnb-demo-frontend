@@ -16,12 +16,12 @@ const Copyright = styled.span`
     margin-left: 16px;
 `; 
 const Link = styled.a`
-text-decoration: none;
-color: #636363;
-font-size: 15px;
-line-height: 18px;
-font-weight: light; 
-margin-right: 16px;
+    text-decoration: none;
+    color: #636363;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: light; 
+    margin-right: 16px;
 `;
 const Item = styled.div`
     display: flex;
@@ -39,9 +39,9 @@ export default () => (
             <Link href='#'>Terms</Link>
             <Link href='#'>Privacy</Link>
             <Link href='#'>Site Map</Link>
-            <Link href='#'><img src={IconF} alt="Facebook"/></Link>
-            <Link href='#'><img src={IconT} alt="Twitter"/></Link>
-            <Link href='#'><img src={IconI} alt="Instagram"/></Link>
+            <Link href='#'><img src={IconF} width='24px' height='24px' alt="Facebook"/></Link>
+            <Link href='#'><img src={IconT} width='24px' height='24px' alt="Twitter"/></Link>
+            <Link href='#'><img src={IconI} width='24px' height='24px' alt="Instagram"/></Link>
         </Item>
       </Content>
     

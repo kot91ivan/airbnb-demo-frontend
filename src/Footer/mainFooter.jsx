@@ -16,7 +16,7 @@ const Language = styled.select`
     font-size: 18px;
     line-height: 21px;
     -webkit-appearance: none;
-    background: url(${InputArrow}) right 20px no-repeat;
+    background: url(${InputArrow}) 95% 50%  no-repeat;
     padding: 12px 16px;
     width: 229px;
     font-weight: book;  

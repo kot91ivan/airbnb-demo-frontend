@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import pic1 from './explore/1.png';
 import pic2 from './explore/2.png';
 import pic3 from './explore/3.png';
+import Arr from './explore/arrowRight.svg'
 
 const Explore = styled.div`
     margin-bottom: 48px;
@@ -21,6 +22,7 @@ const Item = styled.div`
     align-items: center;
     border: 1px solid rgba(72, 72, 72, 0.2);
     border-radius: 4px;
+    box-sizing: border-box;
 `;
 const Img = styled.img`
     
@@ -31,6 +33,15 @@ const Name = styled.p`
     font-size: 17px;
     padding: 0   24px;
     margin: 0px;
+`;
+const LinkArrow = styled.a`
+    width: 40px;
+    height: 40px;
+    background: rbga(255,255,255, 0.5);
+
+`;
+const Arrow = styled.img`
+
 `;
 export default () => (
     <Explore>
@@ -54,6 +65,7 @@ export default () => (
                     <Name>Restaurants</Name>
                 </Item>
             </div>
+            <LinkArrow href="#"><Arrow src={Arr} alt="Arrow"/></LinkArrow>
         </Explores>
     </Explore>
    

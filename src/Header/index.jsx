@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Nav from './nav';
 import logo from './logo.svg';
+import sea from './search.svg';
 
 
 const Header = styled.div`
@@ -19,8 +20,8 @@ const Logo = styled.img`
 const Search = styled.input`
     border: 1px solid rgba(72, 72, 72, 0.2);
     border-radius: 4px;
-    background: #ffffff url('search.svg') no-repeat;
-    padding: 16px 10px;
+    background: #ffffff url(${sea}) 2.5% 50% no-repeat;
+    padding: 16px 40px;
     font-size: 16px;
     width: 392px;
 `;
