@@ -39,6 +39,7 @@ const Name = styled.p`
 `;
 const Hosts = styled.p`
     color: #383838;
+    font-family: "CircularAirLight", Arial, sans-serif; 
     font-size: 12px;
     font-weight: normal;
     line-height: 14px;

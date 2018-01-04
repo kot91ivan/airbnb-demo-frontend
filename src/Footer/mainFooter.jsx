@@ -16,12 +16,12 @@ const Language = styled.select`
     font-size: 18px;
     line-height: 21px;
     -webkit-appearance: none;
+    -moz-appearance: none;
     background: url(${InputArrow}) 95% 50%  no-repeat;
     padding: 12px 16px;
     width: 229px;
-    font-weight: book;  
     margin-bottom: 16px;
-    font-family: "CircularAir", Arial, sans-serif; 
+    font-family: "CircularAirLight", Arial, sans-serif; 
 `;
 const Title = styled.p`
     color: #383838;
@@ -34,8 +34,8 @@ const Link = styled.a`
     color: #636363;
     font-size: 15px;
     line-height: 18px;
-    font-weight: lighter; 
     margin-bottom: 8px;
+    font-family: "CircularAirLight", Arial, sans-serif; 
 `;
 const Item = styled.div`
     display: flex;
@@ -46,13 +46,13 @@ export default () => (
         <div className='col-md-3'>
             <Language>
                 <option value="">English</option>
-                <option value="">Русский</option>
+                <option value="">Russian</option>
                 <option value="">Italiano</option>
                 <option value="">Suomi</option>
             </Language>
             <Language>
                 <option value="">United States dollar</option>
-                <option value="">Русский рубль</option>
+                <option value="">Russian ruble</option>
                 <option value="">Euro</option>
                 <option value="">Suomi</option>
             </Language>

@@ -47,13 +47,23 @@ const Star = styled.img`
     margin-right: 4px;
 `;
 
+const Arrow = styled.button`
+    background: #ffffff;
+    width: 40px;
+    height: 40px;
+    border: 0.5px solid rgba(72, 72, 72, 0.2);
+    border-radius: 20px;
+    position: absolute;
+    top: 90%;  left: 91%; bottom: 0; right: 0;
+
+`;
 export default () => (
     <div>
         <FirstTitle>
-            <div className='col-md-3'>
+            <div className='col-md-2'>
                 <Title> Experiences </Title>
             </div>
-            <div className='col-md-8'></div>
+            <div className='col-md-9'></div>
             <div className='col-md-1'>
                 <LinkAll href="#">See all <img src={smallArrow} alt="arrow"/></LinkAll>
             </div>
@@ -104,6 +114,7 @@ export default () => (
                     <Star src={stars} /> 50 reviews
                 </Reviews>
             </div>
+            <Arrow><img src={Arr} alt=""/></Arrow>
     </Content>
         
     </div>

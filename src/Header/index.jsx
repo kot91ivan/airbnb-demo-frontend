@@ -23,7 +23,7 @@ const Search = styled.input`
     background: #ffffff url(${sea}) 2.5% 50% no-repeat;
     padding: 14px 40px;
     font-size: 16px;
-    font-family: CircularAir;
+    font-family: 'CircularAirBook', Arial, sans-serif;
     width: 350px;
 `;
 

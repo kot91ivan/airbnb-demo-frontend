@@ -1,1 +1,1 @@
-﻿Airbnb Fronted
+﻿Тестовая верстка страницы Airbnb. 
