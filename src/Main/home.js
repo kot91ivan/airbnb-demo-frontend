@@ -6,14 +6,8 @@ import stars from './homes/star.png';
 import Pic1 from './homes/1.png';
 import Pic2 from './homes/2.png';
 import Pic3 from './homes/3.png';
+import {Title} from './Title';
 
-
-
-const Title = styled.h2`
-    font-size: 32px;
-    color: #383838;
-    margin-bottom: 24px;
-`;
 const LinkAll = styled.a`
     text-decoration: none;
     color: #383838;

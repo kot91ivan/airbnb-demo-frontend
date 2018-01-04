@@ -6,13 +6,8 @@ import Pic1 from './popularReservations/popularReservations-1.png';
 import Pic2 from './popularReservations/popularReservations-2.png';
 import Pic3 from './popularReservations/popularReservations-3.png';
 import Pic4 from './popularReservations/popularReservations-4.png';
+import {Title} from './Title';
 
-
-const Title = styled.h2`
-    font-size: 32px;
-    color: #383838;
-    margin-bottom: 24px;
-`;
 const LinkAll = styled.a`
     text-decoration: none;
     color: #383838;

@@ -3,17 +3,13 @@ import styled from 'styled-components';
 import pic1 from './explore/1.png';
 import pic2 from './explore/2.png';
 import pic3 from './explore/3.png';
+import {Title} from './Title';
 
 
 const Explore = styled.div`
     margin-bottom: 48px;
 `;
-const Title = styled.h2`    
-    font-size: 32px;
-    line-height: 34px;
-    color: #383838;
-    margin-bottom: 24px;
-`;
+
 const Explores = styled.div`
     display: flex;
 `;
@@ -37,19 +33,19 @@ export default () => (
     <Explore>
         <Title className='col-md-3'> Explore Airbnb </Title>
         <Explores> 
-            <div  className='col-md-4'>
+            <div  className='col-xs-6 col-sm-5 col-md-4'>
                 <Item>
                     <img src={pic1} alt="homes"/>
                     <Name>Homes</Name>
                 </Item>
             </div>
-            <div className='col-md-4'>
+            <div className='col-xs-6 col-sm-5 col-md-4'>
                 <Item>
                     <img src={pic2} alt='Experiences'/>
                      <Name>Experiences</Name>
                 </Item>
             </div>
-            <div className='col-md-4'>
+            <div className=' col-md-4'>
                 <Item>
                     <img src={pic3} alt='Restaurants' />
                     <Name>Restaurants</Name>

@@ -8,15 +8,11 @@ import Pic3 from './featured/3.png';
 import Pic4 from './featured/4.png';
 import Pic5 from './featured/5.png';
 import Pic6 from './featured/6.png';
+import {Title} from './Title';
 
 
 const Feature = styled.div`
     margin-bottom: 64px;
-`;
-const Title = styled.h2`
-    font-size: 32px;
-    color: #383838;
-    margin-bottom: 24px;
 `;
 const LinkAll = styled.a`
     text-decoration: none;
