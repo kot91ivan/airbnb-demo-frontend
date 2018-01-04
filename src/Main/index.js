@@ -1,6 +1,6 @@
 import React from 'react';
 import Explore from './Explore';
-import Experian from './experien';
+import Experian from './experience';
 import Popular from './popular';
 import Homes from './home';
 import Feature from './feat';

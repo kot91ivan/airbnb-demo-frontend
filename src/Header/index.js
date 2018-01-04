@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import Nav from './nav';
-import logo from './logo.svg';
-import sea from './search.svg';
+import logo from './icon/logo.svg';
+import sea from './icon/search.svg';
 
 
 const Header = styled.div`
