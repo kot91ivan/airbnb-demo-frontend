@@ -46,13 +46,13 @@ const Kind = styled.p`
     margin: 12px 0 2px 0;
 `;
 const Arrow = styled.button`
-background: #ffffff;
-width: 40px;
-height: 40px;
-border: 0.5px solid rgba(72, 72, 72, 0.2);
-border-radius: 20px;
-position: absolute;
-top: 28%;  left: 98%; bottom: 0; right: 0;
+    background: #ffffff;
+    width: 40px;
+    height: 40px;
+    border: 0.5px solid rgba(72, 72, 72, 0.2);
+    border-radius: 20px;
+    position: absolute;
+    top: 28%;  left: 98%;
 `;
 export default () => (
     <div>

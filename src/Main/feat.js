@@ -10,7 +10,6 @@ import Pic5 from './featured/5.png';
 import Pic6 from './featured/6.png';
 import {Title} from './Title';
 
-
 const Feature = styled.div`
     margin-bottom: 64px;
 `;
@@ -40,7 +39,7 @@ const Arrow = styled.button`
     border: 0.5px solid rgba(72, 72, 72, 0.2);
     border-radius: 20px;
     position: absolute;
-    top: 35%;  left: 98%; bottom: 0; right: 0;
+    top: 35%;  left: 96.6%;
 `;
 export default () => (
     <Feature>

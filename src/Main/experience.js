@@ -2,19 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 import smallArrow from './Arrows/smallArrow.svg';
 import Arr from './Arrows/bigArrow.svg';
-import stars from './experiences/star.png';
 import Pic1 from './experiences/1.png';
 import Pic2 from './experiences/2.png';
 import Pic3 from './experiences/3.png';
 import Pic4 from './experiences/4.png';
+import Star from './Stars';
+import {Title} from './Title';
 
-
-const Title = styled.h2`
-    font-size: 32px;
-    line-height: 34px;
-    color: #383838;
-    margin-bottom: 24px;
-`;
 const LinkAll = styled.a`
     text-decoration: none;
     color: #383838;
@@ -46,9 +40,7 @@ const Name = styled.p`
 const Reviews = styled.p`
     color: #383838;
     font-size: 12px;
-`;
-const Star = styled.img`
-    margin-right: 4px;
+    display: flex;
 `;
 
 const Arrow = styled.button`
@@ -58,9 +50,7 @@ const Arrow = styled.button`
     border: 0.5px solid rgba(72, 72, 72, 0.2);
     border-radius: 20px;
     position: absolute;
-    top: 35%;  left: 96.6%; bottom: 0; right: 0;
-    
-    
+    top: 35%;  left: 96.6%;
 `;
 export default () => (
     <div>
@@ -78,11 +68,7 @@ export default () => (
                 <img src={Pic1} width="100%" alt="Forest Terapy"/>
                 <Name><Price>$29 </Price>Forest therapy </Name>
                 <Reviews>
-                    <Star src={stars} />
-                    <Star src={stars} />
-                    <Star src={stars} />
-                    <Star src={stars} />
-                    <Star src={stars} /> 44 reviews
+                    <Star /> 44 reviews
                 </Reviews>
                 
             </div>
@@ -90,33 +76,21 @@ export default () => (
                 <img src={Pic2} width="100%" alt="Whale Watching"/>
                 <Name><Price>$69 </Price>Whale Watching</Name>
                 <Reviews>
-                    <Star src={stars} />
-                    <Star src={stars} />
-                    <Star src={stars} />
-                    <Star src={stars} />
-                    <Star src={stars} /> 40 reviews
+                    <Star /> 40 reviews
                 </Reviews>
             </div>
             <div className='col-xs-6 col-sm-4 col-md-3'>
                 <img src={Pic3} width="100%" alt="Table Mountain Summit, Cable Car Down"/>
                 <Name><Price>$70 </Price>Table Mountain Summit, Cable Car Down</Name>
                 <Reviews>
-                    <Star src={stars} />
-                    <Star src={stars} />
-                    <Star src={stars} />
-                    <Star src={stars} />
-                    <Star src={stars} /> 29 reviews
+                    <Star /> 29 reviews
                 </Reviews>
             </div>
             <div className='col-xs-6 col-sm-4 col-md-3'>
                 <img src={Pic4} width="100%" alt="Salsa Night"/>
                 <Name><Price>$50 </Price>Salsa Night</Name>
                 <Reviews>
-                    <Star src={stars} />
-                    <Star src={stars} />
-                    <Star src={stars} />
-                    <Star src={stars} />
-                    <Star src={stars} /> 50 reviews
+                    <Star /> 50 reviews
                 </Reviews>
             </div>
             <Arrow><img src={Arr} alt=""/></Arrow>

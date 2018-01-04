@@ -24,7 +24,7 @@ const Search = styled.input`
     padding: 14px 40px;
     font-size: 16px;
     font-family: 'CircularAirBook', Arial, sans-serif;
-    width: 350px;
+    width: 300px;
 `;
 
 export default () => (
@@ -36,10 +36,10 @@ export default () => (
         <div className='col-sm-3 col-md-5'>
             <Search placeholder='Try "Miami"' name='search' type='text' />
         </div>
-        <div className='col-sm-1 col-md-3'>
+        <div className='col-sm-3 col-md-3'>
 
         </div>
-        <div className='col-sm-7 col-md-3'>
+        <div className='col-sm-5 col-md-3'>
             <Nav />
         </div>
             

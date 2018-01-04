@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import smallArrow from './Arrows/smallArrow.svg';
 import Arr from './Arrows/bigArrow.svg';
-import stars from './homes/star.png';
 import Pic1 from './homes/1.png';
 import Pic2 from './homes/2.png';
 import Pic3 from './homes/3.png';
@@ -51,14 +50,13 @@ const Beds = styled.p`
     font-weight: lighter;
 `;
 const Arrow = styled.button`
-background: #ffffff;
-width: 40px;
-height: 40px;
-border: 0.5px solid rgba(72, 72, 72, 0.2);
-border-radius: 20px;
-position: absolute;
-top: 28%;  left: 98%; bottom: 0; right: 0;
-
+    background: #ffffff;
+    width: 40px;
+    height: 40px;
+    border: 0.5px solid rgba(72, 72, 72, 0.2);
+    border-radius: 20px;
+    position: absolute;
+    top: 28%;  left: 96.6%;
 `;
 export default () => (
     <div>
