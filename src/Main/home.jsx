@@ -24,19 +24,24 @@ const FirstTitle = styled.div`
 `;
 const Content = styled.div`
     display: flex;
+    margin-bottom: 48px;
 `;
 const Price = styled.span`
     color: #383838;
     font-weight: bold;
+    line-height: 18px;
 `;
 const Name = styled.p`
     color: #383838;
     font-size: 15px;
+    line-height: 18px;
     font-weight: bold   ;
 `;
 const Hosts = styled.p`
     color: #383838;
     font-size: 12px;
+    font-weight: normal;
+    line-height: 14px;
 `;
 const Star = styled.img`
     color: #008489;
@@ -45,7 +50,8 @@ const Star = styled.img`
 const Beds = styled.p`
     color: #383838;
     font-size: 15px;
-    font-weight: light;
+    line-height: 18px;
+    font-weight: lighter;
 `;
 
 export default () => (
@@ -69,7 +75,7 @@ export default () => (
                     <Star src={stars} />
                     <Star src={stars} />
                     <Star src={stars} />
-                    <Star src={stars} /> 97 • Superhost
+                    <Star src={stars} /> 97 · Superhost
                 </Hosts>
             </div>
             <div className='col-md-4'>
@@ -81,7 +87,7 @@ export default () => (
                     <Star src={stars} />
                     <Star src={stars} />
                     <Star src={stars} />
-                    <Star src={stars} /> 161 • Superhost
+                    <Star src={stars} /> 161 · Superhost
                 </Hosts>
             </div>
             <div className='col-md-4'>
@@ -93,7 +99,7 @@ export default () => (
                     <Star src={stars} />
                     <Star src={stars} />
                     <Star src={stars} />
-                    <Star src={stars} /> 364 • Superhost
+                    <Star src={stars} /> 364 · Superhost
                 </Hosts>
             </div>
         </Content>

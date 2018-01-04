@@ -6,18 +6,20 @@ import Pic1 from './experiences/1.png';
 import Pic2 from './experiences/2.png';
 import Pic3 from './experiences/3.png';
 import Pic4 from './experiences/4.png';
+import Arr from './experiences/bigArrow.svg'
 
 const Title = styled.h2`
     font-size: 32px;
+    line-height: 34px;
     color: #383838;
     margin-bottom: 24px;
-
 `;
-
 const LinkAll = styled.a`
     text-decoration: none;
     color: #383838;
     font-size: 14px;
+    font-family: 'CircularAir', Arial, sans-serif;
+    font-weight: normal;
 `;
 const FirstTitle = styled.div`
     display: flex;
@@ -34,6 +36,7 @@ const Price = styled.span`
 const Name = styled.p`
     color: #383838;
     font-size: 15px;
+    font-weight: normal;
 `;
 
 const Reviews = styled.p`
@@ -41,9 +44,9 @@ const Reviews = styled.p`
     font-size: 12px;
 `;
 const Star = styled.img`
-    color: #008489;
     margin-right: 4px;
 `;
+
 export default () => (
     <div>
         <FirstTitle>

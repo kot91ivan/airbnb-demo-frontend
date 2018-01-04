@@ -9,7 +9,7 @@ const Header = styled.div`
     display: flex; 
     padding-top: 23px;
     justify-content: space-between;
-    margin-bottom: 48px;
+    margin-bottom: 20px;
     align-items: center;
 `;
 const Logo = styled.img`
@@ -21,9 +21,10 @@ const Search = styled.input`
     border: 1px solid rgba(72, 72, 72, 0.2);
     border-radius: 4px;
     background: #ffffff url(${sea}) 2.5% 50% no-repeat;
-    padding: 16px 40px;
+    padding: 14px 40px;
     font-size: 16px;
-    width: 392px;
+    font-family: CircularAir;
+    width: 350px;
 `;
 
 export default () => (
@@ -33,9 +34,9 @@ export default () => (
             <Logo src={logo} />
         </div>
         <div className='col-md-5'>
-            <Search placeholder="'Try Miami'" name='search' type='text' />
+            <Search placeholder='Try "Miami"' name='search' type='text' />
         </div>
-        <div className='col-md-2'>
+        <div className='col-md-3'>
 
         </div>
         <div className='col-md-3'>

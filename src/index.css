@@ -1,3 +1,33 @@
+@font-face {
+  font-family: 'CircularAir';
+  src:  url('./Circular/Circular_Air-Book.woff') format('woff'),
+        url('./Circular/Circular_Air-Book.ttf') format('truetype');
+        font-weight: normal,
+        url('./Circular/Circular_Air-Bold.woff') format('woff'),
+        url('./Circular/Circular_Air-Bold.ttf') format('truetype');
+        font-weight: bold,
+        url('./Circular/Circular_Air-Light.woff') format('woff'),
+        url('./Circular/Circular_Air-Light.ttf') format('truetype');
+        font-weight: lighter;
+        
+}
+@font-face {
+  font-family: 'CircularAir';
+  src:  url('./Circular/Circular_Air-Bold.woff') format('woff'),
+        url('./Circular/Circular_Air-Bold.ttf') format('truetype');
+        font-weight: bold,
+}
+@font-face {
+  font-family: 'CircularAir';
+  src:  url('./Circular/Circular_Air-Light.woff') format('woff'),
+        url('./Circular/Circular_Air-Light.ttf') format('truetype');
+        font-weight: lighter;
+        
+}
+
+
+
+
 body {
   margin: 0;
   padding: 0;

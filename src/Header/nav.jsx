@@ -10,9 +10,9 @@ const Link = styled.a`
     color: #383838;
     margin: 8px;
     padding: 0;
-    font-family: Circular, Arial, sans-serif;
+    font-family: 'CircularAir', Arial, sans-serif;
     font-size: 14px;
-    font-weight: Normal;
+    font-weight: normal;
 
 `;
 

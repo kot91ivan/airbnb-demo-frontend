@@ -22,17 +22,18 @@ const FirstTitle = styled.div`
 `;
 const Content = styled.div`
     display: flex;
+    margin-bottom: 48px;
 `;
 const Price = styled.span`
     color: #383838;
     line-height: 21px;
-    font-weight: 200;
+    font-weight: normal;
     font-size: 18px;
     margin-top: 4px;
 `;
 const Name = styled.p`
     color: #383838;
-    
+    line-height: 21px;
     font-size: 18px;
     font-weight: bold;
     margin: 0;
@@ -40,6 +41,7 @@ const Name = styled.p`
 const Kind = styled.p`
     color: #383838; 
     font-size: 10px;
+    line-height: 12px;
     font-weight: bold;
     text-transform: uppercase;
     margin: 12px 0 2px 0;

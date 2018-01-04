@@ -20,7 +20,8 @@ const Language = styled.select`
     padding: 12px 16px;
     width: 229px;
     font-weight: book;  
-    margin-bottom: 16px; 
+    margin-bottom: 16px;
+    font-family: "CircularAir", Arial, sans-serif; 
 `;
 const Title = styled.p`
     color: #383838;
@@ -33,7 +34,7 @@ const Link = styled.a`
     color: #636363;
     font-size: 15px;
     line-height: 18px;
-    font-weight: light; 
+    font-weight: lighter; 
     margin-bottom: 8px;
 `;
 const Item = styled.div`

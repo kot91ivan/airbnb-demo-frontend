@@ -14,6 +14,7 @@ const Copyright = styled.span`
     font-size: 15px;
     line-height: 18px;
     margin-left: 16px;
+    font-weight: normal;
 `; 
 const Link = styled.a`
     text-decoration: none;

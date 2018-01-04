@@ -16,8 +16,6 @@ const Title = styled.h2`
     color: #383838;
     margin-bottom: 24px;
 `;
-
-
 const LinkAll = styled.a`
     text-decoration: none;
     color: #383838;
@@ -33,7 +31,7 @@ const Content = styled.div`
 const Name = styled.p`
     color: #383838;
     font-size: 15px;
-    font-style: normal;
+    font-weight: normal;
 `;
 export default () => (
     <Feature>
