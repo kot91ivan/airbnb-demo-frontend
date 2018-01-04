@@ -22,6 +22,7 @@ const Language = styled.select`
     width: 229px;
     margin-bottom: 16px;
     font-family: "CircularAirLight", Arial, sans-serif; 
+    
 `;
 const Title = styled.p`
     color: #383838;
@@ -38,12 +39,22 @@ const Link = styled.a`
     font-family: "CircularAirLight", Arial, sans-serif; 
 `;
 const Item = styled.div`
+    @media(max-device-width: 768px){
+        display: none;
+    };  
     display: flex;
     flex-direction: column;
+    
+`;
+const Selects = styled.div`
+@media(max-device-width: 768px){
+        display: flex;
+        justify-content: space-around;
+    }
 `;
 export default () => (
     <Content>
-        <div className='col-md-3'>
+        <Selects className='col-xs-12 col-md-3'>
             <Language>
                 <option value="">English</option>
                 <option value="">Russian</option>
@@ -56,7 +67,7 @@ export default () => (
                 <option value="">Euro</option>
                 <option value="">Suomi</option>
             </Language>
-        </div>
+        </Selects>
         <div className='col-md-1'></div>
         <div className='col-md-2'>
             <Item>

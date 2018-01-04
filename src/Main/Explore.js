@@ -12,6 +12,7 @@ const Explore = styled.div`
 
 const Explores = styled.div`
     display: flex;
+    overflow:hidden;
 `;
 const Item = styled.div`
     display: flex;
@@ -31,21 +32,21 @@ const Name = styled.p`
 
 export default () => (
     <Explore>
-        <Title className='col-md-3'> Explore Airbnb </Title>
+        <Title className='col-md-5'> Explore Airbnb </Title>
         <Explores> 
-            <div  className='col-xs-6 col-sm-5 col-md-4'>
+            <div  className='col-sm-4 col-md-4'>
                 <Item>
                     <img src={pic1} alt="homes"/>
                     <Name>Homes</Name>
                 </Item>
             </div>
-            <div className='col-xs-6 col-sm-5 col-md-4'>
+            <div className='col-sm-4 col-md-4'>
                 <Item>
                     <img src={pic2} alt='Experiences'/>
                      <Name>Experiences</Name>
                 </Item>
             </div>
-            <div className=' col-md-4'>
+            <div className='col-sm-4 col-md-4'>
                 <Item>
                     <img src={pic3} alt='Restaurants' />
                     <Name>Restaurants</Name>

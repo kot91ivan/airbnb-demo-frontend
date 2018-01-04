@@ -29,6 +29,9 @@ const FirstTitle = styled.div`
 const Content = styled.div`
     display: flex;
     margin-bottom: 48px;
+    position: relative;
+    overflow:hidden;
+    
 `;
 const Price = styled.span`
     color: #383838;
@@ -55,21 +58,23 @@ const Arrow = styled.button`
     border: 0.5px solid rgba(72, 72, 72, 0.2);
     border-radius: 20px;
     position: absolute;
-    top: 33rem;  left: 91%; bottom: 0; right: 0;
+    top: 35%;  left: 96.6%; bottom: 0; right: 0;
+    
+    
 `;
 export default () => (
     <div>
         <FirstTitle>
-            <div className='col-md-2'>
+            <div className='col-xs-5 col-sm-2 col-md-2'>
                 <Title> Experiences </Title>
             </div>
-            <div className='col-md-9'></div>
-            <div className='col-md-1'>
+            <div className='col-xs-5 col-sm-8 col-md-9'></div>
+            <div className='col-xs-2 col-sm-2 col-md-1'>
                 <LinkAll href="#">See all <img src={smallArrow} alt="arrow"/></LinkAll>
             </div>
         </FirstTitle>
         <Content>
-            <div className='col-md-3'>
+            <div className='col-xs-6 col-sm-4 col-md-3'>
                 <img src={Pic1} width="100%" alt="Forest Terapy"/>
                 <Name><Price>$29 </Price>Forest therapy </Name>
                 <Reviews>
@@ -81,7 +86,7 @@ export default () => (
                 </Reviews>
                 
             </div>
-            <div className='col-md-3'>
+            <div className='col-xs-6 col-sm-4 col-md-3'>
                 <img src={Pic2} width="100%" alt="Whale Watching"/>
                 <Name><Price>$69 </Price>Whale Watching</Name>
                 <Reviews>
@@ -92,7 +97,7 @@ export default () => (
                     <Star src={stars} /> 40 reviews
                 </Reviews>
             </div>
-            <div className='col-md-3'>
+            <div className='col-xs-6 col-sm-4 col-md-3'>
                 <img src={Pic3} width="100%" alt="Table Mountain Summit, Cable Car Down"/>
                 <Name><Price>$70 </Price>Table Mountain Summit, Cable Car Down</Name>
                 <Reviews>
@@ -103,7 +108,7 @@ export default () => (
                     <Star src={stars} /> 29 reviews
                 </Reviews>
             </div>
-            <div className='col-md-3'>
+            <div className='col-xs-6 col-sm-4 col-md-3'>
                 <img src={Pic4} width="100%" alt="Salsa Night"/>
                 <Name><Price>$50 </Price>Salsa Night</Name>
                 <Reviews>

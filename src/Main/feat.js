@@ -25,6 +25,8 @@ const FirstTitle = styled.div`
 `;
 const Content = styled.div`
     display: flex;
+    position: relative;
+    overflow:hidden;
 `;
 const Name = styled.p`
     color: #383838;
@@ -38,41 +40,41 @@ const Arrow = styled.button`
     border: 0.5px solid rgba(72, 72, 72, 0.2);
     border-radius: 20px;
     position: absolute;
-    top: 122rem;  left: 91%; bottom: 0; right: 0;
+    top: 35%;  left: 98%; bottom: 0; right: 0;
 `;
 export default () => (
     <Feature>
         <FirstTitle>
-            <div className='col-md-4'>
+            <div className='col-xs-6 col-md-6'>
                 <Title>Featured destinations</Title>
             </div>
-            <div className='col-md-7'></div>
-            <div className='col-md-1'>
+            <div className='col-xs-4 col-md-4'></div>
+            <div className='col-xs-2 col-md-2'>
                 <LinkAll href="#">See all <img src={smallArrow} alt="arrow"/></LinkAll>
             </div>
         </FirstTitle>
         <Content>
-            <div className='col-md-2'>
+            <div className='col-xs-4 col-sm-3 col-md-2'>
                 <img src={Pic1} width='100%' alt="Paris"/>
                 <Name>Paris</Name>
             </div>
-            <div className='col-md-2'>
+            <div className='col-xs-4 col-sm-3 col-md-2'>
                 <img src={Pic2} width='100%' alt="Miami"/>
                 <Name>Miami</Name>
             </div>
-            <div className='col-md-2'>
+            <div className='col-xs-4 col-sm-3 col-md-2'>
                 <img src={Pic3} width='100%' alt="Tokyo"/>
                 <Name>Tokyo</Name>
             </div>
-            <div className='col-md-2'>
+            <div className='col-xs-4 col-sm-3 col-md-2'>
                 <img src={Pic4} width='100%' alt="Cape Town"/>
                 <Name>Cape Town</Name>
             </div>
-            <div className='col-md-2'>
+            <div className='col-xs-4 col-sm-3 col-md-2'>
                 <img src={Pic5} width='100%' alt="Seoul"/>
                 <Name>Seoul</Name>
             </div>
-            <div className='col-md-2'>
+            <div className='col-xs-4 col-sm-3 col-md-2'>
                 <img src={Pic6} width='100%' alt="Los Angeles"/>
                 <Name>Los Angeles</Name>
             </div>

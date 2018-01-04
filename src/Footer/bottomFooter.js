@@ -31,12 +31,12 @@ const Item = styled.div`
 export default () => (
    
       <Content>
-        <Item className='col-md-2'>
+        <Item className='col-xs-4 col-sm-3 col-md-2'>
             <img src={GreyLogo} width="20px" height="22px" alt="Logo"/>
             <Copyright>© Airbnb Inc.</Copyright>
         </Item>
-        <div className='col-md-6'></div>
-        <Item className='col-md-4'>
+        <div className='col-xs-0 col-sm-3 col-md-6'></div>
+        <Item className='col-xs-8 col-sm-6 col-md-4'>
             <Link href='#'>Terms</Link>
             <Link href='#'>Privacy</Link>
             <Link href='#'>Site Map</Link>

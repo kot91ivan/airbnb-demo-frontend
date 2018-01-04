@@ -30,16 +30,16 @@ const Search = styled.input`
 export default () => (
     <div className='container'>
         <Header className='row'>
-        <div className='col-md-1'>
+        <div className='col-sm-1 col-md-1'>
             <Logo src={logo} />
         </div>
-        <div className='col-md-5'>
+        <div className='col-sm-3 col-md-5'>
             <Search placeholder='Try "Miami"' name='search' type='text' />
         </div>
-        <div className='col-md-3'>
+        <div className='col-sm-1 col-md-3'>
 
         </div>
-        <div className='col-md-3'>
+        <div className='col-sm-7 col-md-3'>
             <Nav />
         </div>
             

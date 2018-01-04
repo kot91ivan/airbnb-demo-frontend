@@ -20,6 +20,8 @@ const FirstTitle = styled.div`
 const Content = styled.div`
     display: flex;
     margin-bottom: 48px;
+    position: relative;
+    overflow:hidden
 `;
 const Price = styled.span`
     color: #383838;
@@ -50,39 +52,39 @@ height: 40px;
 border: 0.5px solid rgba(72, 72, 72, 0.2);
 border-radius: 20px;
 position: absolute;
-top: 95.5rem;  left: 91%; bottom: 0; right: 0;
+top: 28%;  left: 98%; bottom: 0; right: 0;
 `;
 export default () => (
     <div>
         <FirstTitle>
-            <div className='col-md-7'>
+            <div className='col-sm-9 col-md-9'>
                 <Title>Popular reservations around the world</Title>
             </div>
-            <div className='col-md-4'></div>
-            <div className='col-md-1'>
+            <div className='col-sm-1 col-md-2'></div>
+            <div className='col-sm-2 col-md-1'>
                 <LinkAll href="#">See all <img src={smallArrow} alt="arrow"/></LinkAll>
             </div>
         </FirstTitle>
         <Content>
-            <div className='col-md-3'>
+            <div className='col-xs-6 col-sm-4 col-md-3'>
                 <img src={Pic1} width="100%" alt="Chumley’s"/>
                 <Kind>Speakeasy</Kind>
                 <Name>Chumley’s</Name>
                 <Price>About $60 per person</Price> 
             </div>
-            <div className='col-md-3'>
+            <div className='col-xs-6 col-sm-4 col-md-3'>
                 <img src={Pic2} width="100%" alt="Hanjan"/>
                 <Kind>Korean gastropub</Kind>
                 <Name>Hanjan</Name>
                 <Price>About $50 per person</Price> 
             </div>
-            <div className='col-md-3'>
+            <div className='col-xs-6 col-sm-4 col-md-3'>
                 <img src={Pic3} width="100%" alt="Prime Meats"/>
                 <Kind>German american</Kind>
                 <Name>Prime Meats</Name>
                 <Price>About $55 per person</Price>   
             </div>
-            <div className='col-md-3'>
+            <div className='col-xs-6 col-sm-4 col-md-3'>
                 <img src={Pic4} width="100%" alt="Seaprice"/>
                 <Kind>Fine seafood</Kind>
                 <Name>Seaprice</Name>
