@@ -9,77 +9,77 @@ import {Arrow} from './Arrow';
 import LinkAll from './LinkAll';
 
 const FirstTitle = styled.div`
-    display: flex;
-    align-items: baseline;
+  display: flex;
+  align-items: baseline;
 `;
 const Content = styled.div`
-    display: flex;
-    margin-bottom: 48px;
-    position: relative;
-    overflow:hidden
+  display: flex;
+  margin-bottom: 48px;
+  position: relative;
+  overflow: hidden;
 `;
 const Price = styled.span`
-    color: #383838;
-    line-height: 21px;
-    font-weight: normal;
-    font-size: 18px;
-    margin-top: 4px;
+  color: #383838;
+  line-height: 21px;
+  font-weight: normal;
+  font-size: 18px;
+  margin-top: 4px;
 `;
 const Name = styled.p`
-    color: #383838;
-    line-height: 21px;
-    font-size: 18px;
-    font-weight: bold;
-    margin: 0;
+  color: #383838;
+  line-height: 21px;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
 `;
 const Kind = styled.p`
-    color: #383838; 
-    font-size: 10px;
-    line-height: 12px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 12px 0 2px 0;
+  color: #383838;
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 12px 0 2px 0;
 `;
 export const BigArrow = Arrow.extend`
-    top: 28%; 
+  top: 28%;
 `;
 export default () => (
-    <div>
-        <FirstTitle>
-            <div className='col-sm-9 col-md-9'>
-                <Title>Popular reservations around the world</Title>
-            </div>
-            <div className='col-sm-1 col-md-2'></div>
-            <div className='col-sm-2 col-md-1'>
-                <LinkAll />
-            </div>
-        </FirstTitle>
-        <Content>
-            <div className='col-xs-6 col-sm-4 col-md-3'>
-                <img src={Pic1} width="100%" alt="Chumley’s"/>
-                <Kind>Speakeasy</Kind>
-                <Name>Chumley’s</Name>
-                <Price>About $60 per person</Price> 
-            </div>
-            <div className='col-xs-6 col-sm-4 col-md-3'>
-                <img src={Pic2} width="100%" alt="Hanjan"/>
-                <Kind>Korean gastropub</Kind>
-                <Name>Hanjan</Name>
-                <Price>About $50 per person</Price> 
-            </div>
-            <div className='col-xs-6 col-sm-4 col-md-3'>
-                <img src={Pic3} width="100%" alt="Prime Meats"/>
-                <Kind>German american</Kind>
-                <Name>Prime Meats</Name>
-                <Price>About $55 per person</Price>   
-            </div>
-            <div className='col-xs-6 col-sm-4 col-md-3'>
-                <img src={Pic4} width="100%" alt="Seaprice"/>
-                <Kind>Fine seafood</Kind>
-                <Name>Seaprice</Name>
-                <Price>About $70 per person</Price> 
-            </div>
-            <BigArrow />
-        </Content>
-    </div>
+  <div>
+    <FirstTitle>
+      <div className="col-sm-9 col-md-9">
+        <Title>Popular reservations around the world</Title>
+      </div>
+      <div className="col-sm-1 col-md-2" />
+      <div className="col-sm-2 col-md-1">
+        <LinkAll />
+      </div>
+    </FirstTitle>
+    <Content>
+      <div className="col-xs-6 col-sm-4 col-md-3">
+        <img src={Pic1} width="100%" alt="Chumley’s" />
+        <Kind>Speakeasy</Kind>
+        <Name>Chumley’s</Name>
+        <Price>About $60 per person</Price>
+      </div>
+      <div className="col-xs-6 col-sm-4 col-md-3">
+        <img src={Pic2} width="100%" alt="Hanjan" />
+        <Kind>Korean gastropub</Kind>
+        <Name>Hanjan</Name>
+        <Price>About $50 per person</Price>
+      </div>
+      <div className="col-xs-6 col-sm-4 col-md-3">
+        <img src={Pic3} width="100%" alt="Prime Meats" />
+        <Kind>German american</Kind>
+        <Name>Prime Meats</Name>
+        <Price>About $55 per person</Price>
+      </div>
+      <div className="col-xs-6 col-sm-4 col-md-3">
+        <img src={Pic4} width="100%" alt="Seaprice" />
+        <Kind>Fine seafood</Kind>
+        <Name>Seaprice</Name>
+        <Price>About $70 per person</Price>
+      </div>
+      <BigArrow />
+    </Content>
+  </div>
 );
