@@ -1,13 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import smallArrow from './Arrows/smallArrow.svg';
-import Arr from './Arrows/bigArrow.svg';
 import Pic1 from './experiences/1.png';
 import Pic2 from './experiences/2.png';
 import Pic3 from './experiences/3.png';
 import Pic4 from './experiences/4.png';
 import Star from './Stars';
 import {Title} from './Title';
+import {Arrow} from './Arrow';
+
 
 const LinkAll = styled.a`
     text-decoration: none;
@@ -43,14 +44,8 @@ const Reviews = styled.p`
     display: flex;
 `;
 
-const Arrow = styled.button`
-    background: #ffffff;
-    width: 40px;
-    height: 40px;
-    border: 0.5px solid rgba(72, 72, 72, 0.2);
-    border-radius: 20px;
-    position: absolute;
-    top: 35%;  left: 96.6%;
+export const BigArrow = Arrow.extend`
+    top: 35%; 
 `;
 export default () => (
     <div>
@@ -93,7 +88,7 @@ export default () => (
                     <Star /> 50 reviews
                 </Reviews>
             </div>
-            <Arrow><img src={Arr} alt=""/></Arrow>
+            <BigArrow />
     </Content>
         
     </div>

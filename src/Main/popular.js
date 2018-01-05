@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import smallArrow from './Arrows/smallArrow.svg';
-import Arr from './Arrows/bigArrow.svg';
 import Pic1 from './popularReservations/popularReservations-1.png';
 import Pic2 from './popularReservations/popularReservations-2.png';
 import Pic3 from './popularReservations/popularReservations-3.png';
 import Pic4 from './popularReservations/popularReservations-4.png';
 import {Title} from './Title';
+import {Arrow} from './Arrow';
 
 const LinkAll = styled.a`
     text-decoration: none;
@@ -45,14 +45,8 @@ const Kind = styled.p`
     text-transform: uppercase;
     margin: 12px 0 2px 0;
 `;
-const Arrow = styled.button`
-    background: #ffffff;
-    width: 40px;
-    height: 40px;
-    border: 0.5px solid rgba(72, 72, 72, 0.2);
-    border-radius: 20px;
-    position: absolute;
-    top: 28%;  left: 98%;
+export const BigArrow = Arrow.extend`
+    top: 28%; 
 `;
 export default () => (
     <div>
@@ -90,7 +84,7 @@ export default () => (
                 <Name>Seaprice</Name>
                 <Price>About $70 per person</Price> 
             </div>
-            <Arrow><img src={Arr} alt="Arrow"/></Arrow>
+            <BigArrow />
         </Content>
     </div>
 );

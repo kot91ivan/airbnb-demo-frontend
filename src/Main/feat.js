@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import smallArrow from './Arrows/smallArrow.svg';
-import Arr from './Arrows/bigArrow.svg';
 import Pic1 from './featured/1.png';
 import Pic2 from './featured/2.png';
 import Pic3 from './featured/3.png';
@@ -9,6 +8,7 @@ import Pic4 from './featured/4.png';
 import Pic5 from './featured/5.png';
 import Pic6 from './featured/6.png';
 import {Title} from './Title';
+import {Arrow} from './Arrow';
 
 const Feature = styled.div`
     margin-bottom: 64px;
@@ -32,14 +32,8 @@ const Name = styled.p`
     font-size: 15px;
     font-weight: normal;
 `;
-const Arrow = styled.button`
-    background: #ffffff;
-    width: 40px;
-    height: 40px;
-    border: 0.5px solid rgba(72, 72, 72, 0.2);
-    border-radius: 20px;
-    position: absolute;
-    top: 35%;  left: 96.6%;
+export const BigArrow = Arrow.extend`
+    top: 35%; 
 `;
 export default () => (
     <Feature>
@@ -77,7 +71,7 @@ export default () => (
                 <img src={Pic6} width='100%' alt="Los Angeles"/>
                 <Name>Los Angeles</Name>
             </div>
-            <Arrow><img src={Arr} alt="Arrow"/></Arrow>
+            <BigArrow />
         </Content>
     </Feature>
 );

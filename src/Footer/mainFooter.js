@@ -49,7 +49,7 @@ const Item = styled.div`
 const Selects = styled.div`
 @media(max-device-width: 768px){
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
     }
 `;
 export default () => (
