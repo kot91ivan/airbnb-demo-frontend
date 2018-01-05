@@ -1,9 +1,9 @@
 import React from 'react';
 import Explore from './Explore';
-import Experian from './experience';
-import Popular from './popular';
-import Homes from './home';
-import Feature from './feat';
+import Experian from './Experience';
+import Popular from './Popular';
+import Homes from './Home';
+import Featured from './Featured';
 import styled from 'styled-components';
 
 const Main = styled.div`
@@ -17,6 +17,6 @@ export default () => (
     <Experian />
     <Homes />
     <Popular />
-    <Feature />
+    <Featured />
   </Main>
 );

@@ -3,10 +3,9 @@ import styled from 'styled-components';
 import Pic1 from './homes/1.png';
 import Pic2 from './homes/2.png';
 import Pic3 from './homes/3.png';
-import {Title} from './Title';
-import {Arrow} from './Arrow';
+import SmallArrow from './arrows/smallArrow.svg';
+import {Title, Section, Arrow, LinkAll} from './Styled';
 import Star from './Stars';
-import LinkAll from './LinkAll';
 
 const FirstTitle = styled.div`
   display: flex;
@@ -15,7 +14,6 @@ const FirstTitle = styled.div`
 const Content = styled.div`
   display: flex;
   margin-bottom: 48px;
-  position: relative;
   overflow: hidden;
 `;
 const Price = styled.span`
@@ -45,17 +43,19 @@ const Beds = styled.p`
   font-weight: lighter;
 `;
 export const BigArrow = Arrow.extend`
-  top: 28%;
+  top: 42%;
 `;
 export default () => (
-  <div>
+  <Section>
     <FirstTitle>
       <div className="col-xs-5 col-md-3">
         <Title>Homes</Title>
       </div>
       <div className="col-xs-5 col-md-8" />
       <div className="col-xs-2 col-md-1">
-        <LinkAll />
+        <LinkAll href="#">
+          See all <img src={SmallArrow} alt="arrow" />
+        </LinkAll>
       </div>
     </FirstTitle>
     <Content>
@@ -91,5 +91,5 @@ export default () => (
       </div>
       <BigArrow />
     </Content>
-  </div>
+  </Section>
 );

@@ -7,7 +7,6 @@ import sea from './icon/search.svg';
 const Header = styled.div`
   display: flex;
   padding-top: 23px;
-  justify-content: space-between;
   margin-bottom: 20px;
   align-items: center;
 `;

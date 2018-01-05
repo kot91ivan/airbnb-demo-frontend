@@ -3,17 +3,14 @@ import styled from 'styled-components';
 import pic1 from './explore/1.png';
 import pic2 from './explore/2.png';
 import pic3 from './explore/3.png';
-import {Title} from './Title';
-
-const Explore = styled.div`
-  margin-bottom: 48px;
-`;
+import {Title, Section} from './Styled';
 
 const Explores = styled.div`
   display: flex;
   overflow: hidden;
+  margin-bottom: 48px;
 `;
-const Item = styled.div`
+const Card = styled.div`
   display: flex;
   align-items: center;
   border: 1px solid rgba(72, 72, 72, 0.2);
@@ -30,27 +27,29 @@ const Name = styled.p`
 `;
 
 export default () => (
-  <Explore>
-    <Title className="col-md-5"> Explore Airbnb </Title>
+  <Section>
+    <div className="col-md-5">
+      <Title> Explore Airbnb </Title>
+    </div>
     <Explores>
       <div className="col-sm-4 col-md-4">
-        <Item>
+        <Card>
           <img src={pic1} alt="homes" />
           <Name>Homes</Name>
-        </Item>
+        </Card>
       </div>
       <div className="col-sm-4 col-md-4">
-        <Item>
+        <Card>
           <img src={pic2} alt="Experiences" />
           <Name>Experiences</Name>
-        </Item>
+        </Card>
       </div>
       <div className="col-sm-4 col-md-4">
-        <Item>
+        <Card>
           <img src={pic3} alt="Restaurants" />
           <Name>Restaurants</Name>
-        </Item>
+        </Card>
       </div>
     </Explores>
-  </Explore>
+  </Section>
 );

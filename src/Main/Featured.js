@@ -6,21 +6,17 @@ import Pic3 from './featured/3.png';
 import Pic4 from './featured/4.png';
 import Pic5 from './featured/5.png';
 import Pic6 from './featured/6.png';
-import {Title} from './Title';
-import {Arrow} from './Arrow';
-import LinkAll from './LinkAll';
+import SmallArrow from './arrows/smallArrow.svg';
+import {Title, Section, Arrow, LinkAll} from './Styled';
 
-const Feature = styled.div`
-  margin-bottom: 64px;
-`;
 const FirstTitle = styled.div`
   display: flex;
   align-items: baseline;
 `;
 const Content = styled.div`
   display: flex;
-  position: relative;
   overflow: hidden;
+  margin-bottom: 64px;
 `;
 const Name = styled.p`
   color: #383838;
@@ -28,17 +24,19 @@ const Name = styled.p`
   font-weight: normal;
 `;
 export const BigArrow = Arrow.extend`
-  top: 35%;
+  top: 48%;
 `;
 export default () => (
-  <Feature>
+  <Section>
     <FirstTitle>
-      <div className="col-xs-6 col-md-6">
+      <div className="col-xs-6 col-sm-6 col-md-6">
         <Title>Featured destinations</Title>
       </div>
       <div className="col-xs-4 col-md-5" />
       <div className="col-xs-2 col-md-1">
-        <LinkAll />
+        <LinkAll href="#">
+          See all <img src={SmallArrow} alt="arrow" />
+        </LinkAll>
       </div>
     </FirstTitle>
     <Content>
@@ -68,5 +66,5 @@ export default () => (
       </div>
       <BigArrow />
     </Content>
-  </Feature>
+  </Section>
 );

@@ -5,9 +5,8 @@ import Pic2 from './experiences/2.png';
 import Pic3 from './experiences/3.png';
 import Pic4 from './experiences/4.png';
 import Star from './Stars';
-import {Title} from './Title';
-import {Arrow} from './Arrow';
-import LinkAll from './LinkAll';
+import smallArrow from './arrows/smallArrow.svg';
+import {Title, Section, Arrow, LinkAll} from './Styled';
 
 const FirstTitle = styled.div`
   display: flex;
@@ -16,7 +15,6 @@ const FirstTitle = styled.div`
 const Content = styled.div`
   display: flex;
   margin-bottom: 48px;
-  position: relative;
   overflow: hidden;
 `;
 const Price = styled.span`
@@ -36,17 +34,20 @@ const Reviews = styled.p`
 `;
 
 export const BigArrow = Arrow.extend`
-  top: 35%;
+  top: 45%;
 `;
+
 export default () => (
-  <div>
+  <Section>
     <FirstTitle>
-      <div className="col-xs-5 col-sm-2 col-md-2">
+      <div className="col-xs-10 col-sm-2 col-md-2">
         <Title> Experiences </Title>
       </div>
-      <div className="col-xs-5 col-sm-8 col-md-9" />
+      <div className="col-sm-8 col-md-9" />
       <div className="col-xs-2 col-sm-2 col-md-1">
-        <LinkAll />
+        <LinkAll href="#">
+          See all <img src={smallArrow} alt="arrow" />
+        </LinkAll>
       </div>
     </FirstTitle>
     <Content>
@@ -92,5 +93,5 @@ export default () => (
       </div>
       <BigArrow />
     </Content>
-  </div>
+  </Section>
 );

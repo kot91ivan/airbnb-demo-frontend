@@ -4,9 +4,8 @@ import Pic1 from './popularReservations/popularReservations-1.png';
 import Pic2 from './popularReservations/popularReservations-2.png';
 import Pic3 from './popularReservations/popularReservations-3.png';
 import Pic4 from './popularReservations/popularReservations-4.png';
-import {Title} from './Title';
-import {Arrow} from './Arrow';
-import LinkAll from './LinkAll';
+import SmallArrow from './arrows/smallArrow.svg';
+import {Title, Section, Arrow, LinkAll} from './Styled';
 
 const FirstTitle = styled.div`
   display: flex;
@@ -15,7 +14,6 @@ const FirstTitle = styled.div`
 const Content = styled.div`
   display: flex;
   margin-bottom: 48px;
-  position: relative;
   overflow: hidden;
 `;
 const Price = styled.span`
@@ -41,17 +39,19 @@ const Kind = styled.p`
   margin: 12px 0 2px 0;
 `;
 export const BigArrow = Arrow.extend`
-  top: 28%;
+  top: 45%;
 `;
 export default () => (
-  <div>
+  <Section>
     <FirstTitle>
       <div className="col-sm-9 col-md-9">
         <Title>Popular reservations around the world</Title>
       </div>
       <div className="col-sm-1 col-md-2" />
       <div className="col-sm-2 col-md-1">
-        <LinkAll />
+        <LinkAll href="#">
+          See all <img src={SmallArrow} alt="arrow" />
+        </LinkAll>
       </div>
     </FirstTitle>
     <Content>
@@ -81,5 +81,5 @@ export default () => (
       </div>
       <BigArrow />
     </Content>
-  </div>
+  </Section>
 );
