@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Arr from './Arrows/bigArrow.svg';
+import Arr from './arrows/bigArrow.svg';
 
 export const LinkAll = styled.a`
   text-decoration: none;

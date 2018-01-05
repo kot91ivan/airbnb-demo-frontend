@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import stars from './homes/star.png';
+import stars from './star.png';
 
 const Star = styled.img`
   color: #008489;
