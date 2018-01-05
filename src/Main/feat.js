@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import smallArrow from './Arrows/smallArrow.svg';
 import Pic1 from './featured/1.png';
 import Pic2 from './featured/2.png';
 import Pic3 from './featured/3.png';
@@ -9,18 +8,14 @@ import Pic5 from './featured/5.png';
 import Pic6 from './featured/6.png';
 import {Title} from './Title';
 import {Arrow} from './Arrow';
+import LinkAll from './LinkAll';
 
 const Feature = styled.div`
     margin-bottom: 64px;
 `;
-const LinkAll = styled.a`
-    text-decoration: none;
-    color: #383838;
-    font-size: 14px;
-`;
 const FirstTitle = styled.div`
     display: flex;
-    align-items: center;
+    align-items: baseline;
 `;
 const Content = styled.div`
     display: flex;
@@ -41,9 +36,9 @@ export default () => (
             <div className='col-xs-6 col-md-6'>
                 <Title>Featured destinations</Title>
             </div>
-            <div className='col-xs-4 col-md-4'></div>
-            <div className='col-xs-2 col-md-2'>
-                <LinkAll href="#">See all <img src={smallArrow} alt="arrow"/></LinkAll>
+            <div className='col-xs-4 col-md-5'></div>
+            <div className='col-xs-2 col-md-1'>
+                <LinkAll />
             </div>
         </FirstTitle>
         <Content>

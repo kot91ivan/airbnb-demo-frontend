@@ -1,21 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
-import smallArrow from './Arrows/smallArrow.svg';
 import Pic1 from './homes/1.png';
 import Pic2 from './homes/2.png';
 import Pic3 from './homes/3.png';
 import {Title} from './Title';
 import {Arrow} from './Arrow';
 import Star from './Stars';
+import LinkAll from './LinkAll';
 
-const LinkAll = styled.a`
-    text-decoration: none;
-    color: #383838;
-    font-size: 14px;
-`;
 const FirstTitle = styled.div`
     display: flex;
-    align-items: center;
+    align-items: baseline;
 `;
 const Content = styled.div`
     display: flex;
@@ -60,7 +55,7 @@ export default () => (
             </div>
             <div className='col-xs-5 col-md-8'></div>
             <div className='col-xs-2 col-md-1'>
-                <LinkAll href="#">See all <img src={smallArrow} alt="arrow"/></LinkAll>
+                <LinkAll />
             </div>
         </FirstTitle>
         <Content>
