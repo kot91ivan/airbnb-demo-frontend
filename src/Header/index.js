@@ -1,10 +1,10 @@
-import React from 'react';
-import styled from 'styled-components';
-import Nav from './Nav';
+import React from "react";
+import styled from "styled-components";
+import Nav from "./Nav";
 
-import logo from './logo.svg';
-import search from './search.svg';
-import downArrow from './down.svg';
+import logo from "./logo.svg";
+import search from "./search.svg";
+import downArrow from "./down.svg";
 
 const Header = styled.header`
   display: flex;
@@ -13,7 +13,8 @@ const Header = styled.header`
   align-items: center;
 `;
 
-const Logo = styled.img`
+const Img = styled.img`
+  padding: 10px;
   height: 32px;
   width: 30px;
 `;
@@ -24,7 +25,7 @@ const Search = styled.input`
   background: #ffffff url(${search}) 2.5% 50% no-repeat;
   padding: 14px 40px;
   font-size: 14px;
-  font-family: 'CircularAirBook', Arial, sans-serif;
+  font-family: "CircularAirBook", Arial, sans-serif;
   @media (min-width: 768px) {
     font-size: 16px;
     line-height: 24px;
@@ -43,18 +44,25 @@ const DropdownMenu = styled.button`
   }
 `;
 
+const Logo = styled.div`
+  display: flex;
+`;
+
 export default () => (
   <Header>
-    <div className="col-sm-2 col-md-1">
-      <Logo src={logo} />
-      <DropdownMenu>
-        <img src={downArrow} alt="Menu Arrow" />
-      </DropdownMenu>
+    <div className="col-sm-3 col-md-2">
+      <Logo>
+        <Img src={logo} />
+        <DropdownMenu>
+          <img src={downArrow} alt="Menu Arrow" />
+        </DropdownMenu>
+      </Logo>
     </div>
+
     <div className="col-sm-3 col-md-5">
       <Search placeholder="Try &quot;Miami&quot;" name="search" type="text" />
     </div>
-    <div className="col-md-offset-3" />
+    <div className="col-md-offset-2" />
     <div className="col-md-3">
       <Nav />
     </div>
