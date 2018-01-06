@@ -1,27 +1,33 @@
 import React from 'react';
 import styled from 'styled-components';
-import InputArrow from './icondown.svg';
 import Bottom from './Bottom';
+
+import InputArrow from './icondown.svg';
 
 const Content = styled.div`
   margin-top: 24px;
   margin-bottom: 48px;
   display: flex;
 `;
+
 const Language = styled.select`
   color: #383838;
   border: 1px solid rgba(72, 72, 72, 0.2);
   border-radius: 4px;
-  font-size: 18px;
-  line-height: 21px;
-  webkit-appearance: none;
-  moz-appearance: none;
+  font-size: 12px;
+  line-height: 14px;
+  appearance: none;
   background: url(${InputArrow}) 95% 50% no-repeat;
   padding: 12px 16px;
   width: 229px;
   margin-bottom: 16px;
   font-family: 'CircularAirLight', Arial, sans-serif;
   cursor: pointer;
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+    line-height: 21px;
+  }
 
   @media only screen and (min-width: 480px) {
     font-size: 12px;
@@ -38,12 +44,14 @@ const Language = styled.select`
     line-height: 21px;
   }
 `;
+
 const Title = styled.p`
   color: #383838;
   font-size: 15px;
   line-height: 18px;
   font-weight: bold;
 `;
+
 const Link = styled.a`
   text-decoration: none;
   color: #636363;
@@ -56,6 +64,7 @@ const Link = styled.a`
     line-height: 18px;
   }
 `;
+
 const Nav = styled.nav`
   display: none;
 
@@ -64,6 +73,7 @@ const Nav = styled.nav`
     flex-direction: column;
   }
 `;
+
 const Selects = styled.div`
   display: flex;
   justify-content: space-around;
@@ -71,6 +81,7 @@ const Selects = styled.div`
     flex-direction: column;
   }
 `;
+
 export default () => (
   <div>
     <Content>

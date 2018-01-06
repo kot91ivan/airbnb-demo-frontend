@@ -1,36 +1,49 @@
 import React from 'react';
 import styled from 'styled-components';
+import {Title} from '../Styled';
+import {Section, Arrow, LinkAll, CardLink, Header, Content} from '../Styled';
+
 import Pic1 from './popularReservations-1.png';
 import Pic2 from './popularReservations-2.png';
 import Pic3 from './popularReservations-3.png';
 import Pic4 from './popularReservations-4.png';
 import SmallArrow from '../Arrows/smallArrow.svg';
-import {Title} from '../Styled';
-import {Section, Arrow, LinkAll, CardLink, Header, Content} from '../Styled';
 
 const Price = styled.span`
   color: #383838;
-  line-height: 21px;
+  line-height: 14px;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 12px;
   margin-top: 4px;
+  @media (min-width: 768px) {
+    font-size: 18px;
+    line-height: 21px;
+  }
 `;
 
 const Name = styled.p`
   color: #383838;
-  line-height: 21px;
-  font-size: 18px;
+  line-height: 16px;
+  font-size: 14px;
   font-weight: bold;
   margin: 0;
+  @media (min-width: 768px) {
+    font-size: 18px;
+    line-height: 21px;
+  }
 `;
 
 const Kind = styled.p`
   color: #383838;
-  font-size: 10px;
-  line-height: 12px;
+  font-size: 8px;
+  line-height: 9px;
   font-weight: bold;
   text-transform: uppercase;
   margin: 12px 0 2px 0;
+  @media (min-width: 768px) {
+    font-size: 10px;
+    line-height: 12px;
+  }
 `;
 
 export const BigArrow = Arrow.extend`

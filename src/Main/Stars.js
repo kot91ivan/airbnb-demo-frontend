@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import star from './star.png';
 
 const Star = styled.img`

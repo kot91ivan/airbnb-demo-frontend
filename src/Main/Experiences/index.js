@@ -1,13 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
-import Pic1 from './1.png';
-import Pic2 from './2.png';
-import Pic3 from './3.png';
-import Pic4 from './4.png';
-import Star from '../Stars';
-import smallArrow from '../Arrows/smallArrow.svg';
 import {Title} from '../Styled';
 import {Section, Arrow, LinkAll, CardLink, Header, Content} from '../Styled';
+import Stars from '../Stars';
+
+import Pic1 from './Experiences-1.png';
+import Pic2 from './Experiences-2.png';
+import Pic3 from './Experiences-3.png';
+import Pic4 from './Experiences-4.png';
+import smallArrow from '../Arrows/smallArrow.svg';
 
 const Price = styled.span`
   color: #383838;
@@ -16,8 +17,13 @@ const Price = styled.span`
 
 const Name = styled.p`
   color: #383838;
-  font-size: 15px;
+  font-size: 13px;
+  line-height: 15px;
   font-weight: normal;
+  @media (min-width: 768px) {
+    font-size: 15px;
+    line-height: 18px;
+  }
 `;
 
 const Reviews = styled.p`
@@ -51,7 +57,7 @@ export default () => (
             <Price>$29 </Price>Forest therapy{' '}
           </Name>
           <Reviews>
-            <Star /> 44 reviews
+            <Stars /> 44 reviews
           </Reviews>
         </CardLink>
       </div>
@@ -62,7 +68,7 @@ export default () => (
             <Price>$69 </Price>Whale Watching
           </Name>
           <Reviews>
-            <Star /> 40 reviews
+            <Stars /> 40 reviews
           </Reviews>
         </CardLink>
       </div>
@@ -77,7 +83,7 @@ export default () => (
             <Price>$70 </Price>Table Mountain Summit, Cable Car Down
           </Name>
           <Reviews>
-            <Star /> 29 reviews
+            <Stars /> 29 reviews
           </Reviews>
         </CardLink>
       </div>
@@ -89,7 +95,7 @@ export default () => (
             <Price>$50 </Price>Salsa Night
           </Name>
           <Reviews>
-            <Star /> 50 reviews
+            <Stars /> 50 reviews
           </Reviews>
         </CardLink>
       </div>

@@ -1,12 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import Pic1 from './1.png';
-import Pic2 from './2.png';
-import Pic3 from './3.png';
-import SmallArrow from '../Arrows/smallArrow.svg';
 import {Title} from '../Styled';
 import {Section, Arrow, LinkAll, CardLink, Header, Content} from '../Styled';
 import Stars from '../Stars';
+
+import Pic1 from './Homes-1.png';
+import Pic2 from './Homes-2.png';
+import Pic3 from './Homes-3.png';
+import SmallArrow from '../Arrows/smallArrow.svg';
 
 const Price = styled.span`
   color: #383838;
@@ -16,9 +17,13 @@ const Price = styled.span`
 
 const Name = styled.p`
   color: #383838;
-  font-size: 15px;
-  line-height: 18px;
+  font-size: 13px;
+  line-height: 15px;
   font-weight: bold;
+  @media (min-width: 768px) {
+    font-size: 15px;
+    line-height: 18px;
+  }
 `;
 
 const Hosts = styled.p`
@@ -32,9 +37,13 @@ const Hosts = styled.p`
 
 const Beds = styled.p`
   color: #383838;
-  font-size: 15px;
-  line-height: 18px;
+  font-size: 12px;
+  line-height: 14px;
   font-weight: lighter;
+  @media (min-width: 768px) {
+    font-size: 15px;
+    line-height: 18px;
+  }
 `;
 
 export const BigArrow = Arrow.extend`

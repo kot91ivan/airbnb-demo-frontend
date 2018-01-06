@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import Arr from './Arrows/bigArrow.svg';
 
 export const LinkAll = styled.a`
@@ -30,7 +31,6 @@ export const Arrow = styled.button`
 
 export const Section = styled.div`
   position: relative;
-  flex-wrap: nowrap;
 `;
 
 export const Title = styled.h1`
@@ -58,7 +58,9 @@ export const Content = styled.div`
   display: flex;
   margin-bottom: 40px;
   overflow: hidden;
+  flex-wrap: nowrap;
   @media (min-width: 768px) {
     margin-bottom: 48px;
+    flex-wrap: nowrap;
   }
 `;
