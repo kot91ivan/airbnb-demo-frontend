@@ -1,13 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
 import GreyLogo from './gray-logo.svg';
-import Facebook from './social/facebook.svg';
-import Twitter from './social/twitter.svg';
-import Instagram from './social/instagram.svg';
+import Facebook from './facebook.svg';
+import Twitter from './twitter.svg';
+import Instagram from './instagram.svg';
 
 const Content = styled.div`
   display: flex;
+  flex-direction: column;
   margin-bottom: 35px;
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
 `;
 const Copyright = styled.span`
   color: #636363;
@@ -24,17 +28,18 @@ const Link = styled.a`
   font-weight: light;
   margin-right: 16px;
 `;
-const Nav = styled.div`
+const Nav = styled.nav`
   display: flex;
   align-items: center;
+  margin-top: 20px;
 `;
 export default () => (
   <Content>
-    <div className="col-xs-4 col-sm-3 col-md-2">
+    <div className="col-xs-4 col-sm-4 col-md-3">
       <img src={GreyLogo} width="20px" height="22px" alt="Logo" />
       <Copyright>© Airbnb Inc.</Copyright>
     </div>
-    <div className="col-sm-3 col-md-6" />
+    <div className="col-sm-offset-1 col-md-offset-5" />
     <div className="col-xs-8 col-sm-6 col-md-4">
       <Nav>
         <Link href="#">Terms</Link>

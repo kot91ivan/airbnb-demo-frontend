@@ -11,6 +11,7 @@ export const LinkAll = styled.a`
 `;
 
 export const Arrow = styled.button`
+  display: none;
   background: #ffffff url(${Arr}) 50% 50% no-repeat;
   width: 40px;
   height: 40px;
@@ -18,16 +19,18 @@ export const Arrow = styled.button`
   border-radius: 20px;
   position: absolute;
   left: 98%;
-  @media (max-device-width: 991px) {
-    display: none;
+  cursor: pointer;
+  @media (min-width: 991px) {
+    display: block;
   }
 `;
 
 export const Section = styled.div`
   position: relative;
+  margin: auto;
 `;
 
-export const Title = styled.h2`
+export const Title = styled.h1`
   font-size: 32px;
   line-height: 34px;
   color: #383838;
@@ -36,4 +39,20 @@ export const Title = styled.h2`
     font-size: 24px;
     line-height: 28px;
   }
+`;
+
+export const CardLink = styled.a`
+  text-decoration: none;
+`;
+
+export const Header = styled.header`
+  display: flex;
+  align-items: baseline;
+`;
+
+export const Content = styled.div`
+  display: flex;
+  margin-bottom: 48px;
+  overflow: hidden;
+  flex-wrap: nowrap;
 `;

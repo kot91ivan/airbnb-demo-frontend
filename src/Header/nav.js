@@ -1,13 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Nav = styled.div`
-  display: flex;
-  align-items: center;
-  @media (max-device-width: 768px) {
-    display: none;
+const Nav = styled.nav`
+  display: none;
+
+  @media (min-width: 991px) {
+    display: flex;
+    align-items: center;
   }
 `;
+
 const Link = styled.a`
   text-decoration: none;
   color: #383838;

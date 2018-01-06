@@ -6,9 +6,8 @@ import Footer from './Footer';
 import styled from 'styled-components';
 
 const Wrap = styled.div`
-  @media (min-device-width: 991px) {
-    padding: 0 79px;
-  }
+  display: flex;
+  flex-direction: column;
 `;
 
 class App extends Component {

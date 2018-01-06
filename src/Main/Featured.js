@@ -7,62 +7,68 @@ import Pic4 from './featured/4.png';
 import Pic5 from './featured/5.png';
 import Pic6 from './featured/6.png';
 import SmallArrow from './arrows/smallArrow.svg';
-import {Title, Section, Arrow, LinkAll} from './Styled';
+import {Title} from './Styled';
+import {Section, Arrow, LinkAll, CardLink, Header, Content} from './Styled';
 
-const FirstTitle = styled.div`
-  display: flex;
-  align-items: baseline;
-`;
-const Content = styled.div`
-  display: flex;
-  overflow: hidden;
-  margin-bottom: 64px;
-`;
 const Name = styled.p`
   color: #383838;
   font-size: 15px;
   font-weight: normal;
 `;
+
 export const BigArrow = Arrow.extend`
   top: 48%;
 `;
+
 export default () => (
   <Section>
-    <FirstTitle>
-      <div className="col-xs-6 col-sm-6 col-md-6">
+    <Header>
+      <div className="col-xs-8 col-sm-6 col-md-6">
         <Title>Featured destinations</Title>
       </div>
-      <div className="col-xs-4 col-md-5" />
-      <div className="col-xs-2 col-md-1">
+      <div className="col-xs-offset-1 col-md-offset-5" />
+      <div className="col-xs-3 col-md-1">
         <LinkAll href="#">
           See all <img src={SmallArrow} alt="arrow" />
         </LinkAll>
       </div>
-    </FirstTitle>
+    </Header>
     <Content>
       <div className="col-xs-4 col-sm-3 col-md-2">
-        <img src={Pic1} width="100%" alt="Paris" />
-        <Name>Paris</Name>
+        <CardLink href="#">
+          <img src={Pic1} width="100%" alt="Paris" />
+          <Name>Paris</Name>
+        </CardLink>
       </div>
       <div className="col-xs-4 col-sm-3 col-md-2">
-        <img src={Pic2} width="100%" alt="Miami" />
-        <Name>Miami</Name>
+        <CardLink href="#">
+          <img src={Pic2} width="100%" alt="Miami" />
+          <Name>Miami</Name>
+        </CardLink>
       </div>
       <div className="col-xs-4 col-sm-3 col-md-2">
-        <img src={Pic3} width="100%" alt="Tokyo" />
-        <Name>Tokyo</Name>
+        <CardLink href="#">
+          <img src={Pic3} width="100%" alt="Tokyo" />
+          <Name>Tokyo</Name>
+        </CardLink>
       </div>
       <div className="col-xs-4 col-sm-3 col-md-2">
-        <img src={Pic4} width="100%" alt="Cape Town" />
-        <Name>Cape Town</Name>
+        <CardLink href="#">
+          <img src={Pic4} width="100%" alt="Cape Town" />
+          <Name>Cape Town</Name>
+        </CardLink>
       </div>
       <div className="col-xs-4 col-sm-3 col-md-2">
-        <img src={Pic5} width="100%" alt="Seoul" />
-        <Name>Seoul</Name>
+        <CardLink href="#">
+          <img src={Pic5} width="100%" alt="Seoul" />
+          <Name>Seoul</Name>
+        </CardLink>
       </div>
       <div className="col-xs-4 col-sm-3 col-md-2">
-        <img src={Pic6} width="100%" alt="Los Angeles" />
-        <Name>Los Angeles</Name>
+        <CardLink href="#">
+          <img src={Pic6} width="100%" alt="Los Angeles" />
+          <Name>Los Angeles</Name>
+        </CardLink>
       </div>
       <BigArrow />
     </Content>

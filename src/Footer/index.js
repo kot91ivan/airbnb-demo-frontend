@@ -21,6 +21,22 @@ const Language = styled.select`
   width: 229px;
   margin-bottom: 16px;
   font-family: 'CircularAirLight', Arial, sans-serif;
+  cursor: pointer;
+
+  @media only screen and (min-width: 480px) {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  @media only screen and (min-width: 992px) {
+    font-size: 18px;
+    line-height: 21px;
+  }
 `;
 const Title = styled.p`
   color: #383838;
@@ -31,22 +47,28 @@ const Title = styled.p`
 const Link = styled.a`
   text-decoration: none;
   color: #636363;
-  font-size: 15px;
-  line-height: 18px;
+  font-size: 12px;
+  line-height: 14px;
   margin-bottom: 8px;
   font-family: 'CircularAirLight', Arial, sans-serif;
-`;
-const Nav = styled.div`
-  @media (max-device-width: 768px) {
-    display: none;
+  @media (min-width: 991px) {
+    font-size: 15px;
+    line-height: 18px;
   }
-  display: flex;
-  flex-direction: column;
+`;
+const Nav = styled.nav`
+  display: none;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 const Selects = styled.div`
-  @media (max-device-width: 768px) {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
+  @media (min-width: 768px) {
+    flex-direction: column;
   }
 `;
 export default () => (
