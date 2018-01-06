@@ -31,6 +31,7 @@ export const Arrow = styled.button`
 
 export const Section = styled.div`
   position: relative;
+  overflow: hidden;
 `;
 
 export const Title = styled.h1`
@@ -57,10 +58,9 @@ export const Header = styled.header`
 export const Content = styled.div`
   display: flex;
   margin-bottom: 40px;
-  overflow: hidden;
   flex-wrap: nowrap;
+  overflow-x: auto;
   @media (min-width: 768px) {
     margin-bottom: 48px;
-    flex-wrap: nowrap;
   }
 `;

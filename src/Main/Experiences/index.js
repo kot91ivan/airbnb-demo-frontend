@@ -42,7 +42,7 @@ export default () => (
       <div className="col-xs-4 col-sm-4 col-md-3">
         <Title>Experiences</Title>
       </div>
-      <div className="col-xs-offset-6 col-sm-offset-6 col-md-offset-8" />
+      <div className="col-xs-offset-5 col-sm-offset-6 col-md-offset-8" />
       <div className="col-xs-3 col-sm-2 col-md-1">
         <LinkAll href="#">
           See all <img src={smallArrow} alt="arrow" />

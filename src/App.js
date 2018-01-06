@@ -3,18 +3,15 @@ import './App.css';
 import Header from './Header';
 import Main from './Main';
 import Footer from './Footer';
-import styled from 'styled-components';
-
-const Wrap = styled.div``;
 
 class App extends Component {
   render() {
     return (
-      <Wrap>
+      <div>
         <Header />
         <Main />
         <Footer />
-      </Wrap>
+      </div>
     );
   }
 }

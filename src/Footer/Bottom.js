@@ -42,12 +42,12 @@ const Nav = styled.nav`
 
 export default () => (
   <Content>
-    <div className="col-xs-4 col-sm-3 col-md-3">
+    <div className="col-xs-6 col-sm-3 col-md-3">
       <img src={Logo} width="20px" height="22px" alt="Logo" />
       <Copyright>© Airbnb Inc.</Copyright>
     </div>
     <div className="col-sm-offset-1 col-md-offset-5" />
-    <div className="col-xs-8 col-sm-5 col-md-4">
+    <div className="col-xs-12 col-sm-5 col-md-4">
       <Nav>
         <Link href="#">Terms</Link>
         <Link href="#">Privacy</Link>

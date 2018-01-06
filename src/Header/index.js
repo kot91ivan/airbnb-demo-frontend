@@ -4,7 +4,7 @@ import Nav from './Nav';
 
 import logo from './logo.svg';
 import search from './search.svg';
-import DropdownArrow from './down.svg';
+import downArrow from './down.svg';
 
 const Header = styled.header`
   display: flex;
@@ -45,17 +45,17 @@ const DropdownMenu = styled.button`
 
 export default () => (
   <Header>
-    <div className="col-sm-2 col-md-2">
+    <div className="col-sm-2 col-md-1">
       <Logo src={logo} />
       <DropdownMenu>
-        <img src={DropdownArrow} alt="Menu Arrow" />
+        <img src={downArrow} alt="Menu Arrow" />
       </DropdownMenu>
     </div>
     <div className="col-sm-3 col-md-5">
       <Search placeholder="Try &quot;Miami&quot;" name="search" type="text" />
     </div>
-    <div className="col-md-offset-2" />
-    <div className="col-sm-5 col-md-3">
+    <div className="col-md-offset-3" />
+    <div className="col-md-3">
       <Nav />
     </div>
   </Header>

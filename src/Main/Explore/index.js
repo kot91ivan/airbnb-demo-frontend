@@ -42,11 +42,11 @@ const Img = styled.img`
 `;
 export default () => (
   <Section>
-    <div className="col-sm-4 col-md-4">
+    <div className="col-sm-5 col-md-4">
       <Title>Explore Airbnb</Title>
     </div>
     <Content>
-      <div className="col-xs-6 col-sm-4 col-md-4">
+      <div className="col-xs-6 col-sm-5 col-md-4">
         <CardLink href="#">
           <Card>
             <Img src={pic1} alt="homes" />
@@ -54,7 +54,7 @@ export default () => (
           </Card>
         </CardLink>
       </div>
-      <div className="col-xs-6 col-sm-4 col-md-4">
+      <div className="col-xs-6 col-sm-5 col-md-4">
         <CardLink href="#">
           <Card>
             <Img src={pic2} alt="Experiences" />
@@ -62,7 +62,7 @@ export default () => (
           </Card>
         </CardLink>
       </div>
-      <div className="col-xs-6 col-sm-4 col-md-4">
+      <div className="col-xs-6 col-sm-5 col-md-4">
         <CardLink href="#">
           <Card>
             <Img src={pic3} alt="Restaurants" />
