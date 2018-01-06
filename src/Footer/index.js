@@ -14,8 +14,8 @@ const Language = styled.select`
   border-radius: 4px;
   font-size: 18px;
   line-height: 21px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+  webkit-appearance: none;
+  moz-appearance: none;
   background: url(${InputArrow}) 95% 50% no-repeat;
   padding: 12px 16px;
   width: 229px;

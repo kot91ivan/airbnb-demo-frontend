@@ -1,8 +1,8 @@
 import React from 'react';
 import Explore from './Explore';
-import Experian from './Experience';
-import Popular from './Popular';
-import Homes from './Home';
+import Experian from './Experiences';
+import Popular from './PopularReservations';
+import Homes from './Homes';
 import Featured from './Featured';
 import styled from 'styled-components';
 

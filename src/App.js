@@ -5,10 +5,7 @@ import Main from './Main';
 import Footer from './Footer';
 import styled from 'styled-components';
 
-const Wrap = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
+const Wrap = styled.div``;
 
 class App extends Component {
   render() {

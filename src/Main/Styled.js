@@ -1,13 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
-import Arr from './arrows/bigArrow.svg';
+import Arr from './Arrows/bigArrow.svg';
 
 export const LinkAll = styled.a`
   text-decoration: none;
   color: #383838;
-  font-size: 14px;
+  font-size: 12px;
   font-family: 'CircularAir', Arial, sans-serif;
   font-weight: normal;
+  @media (min-width: 768px) {
+    font-size: 14px;
+  }
 `;
 
 export const Arrow = styled.button`
@@ -27,17 +30,18 @@ export const Arrow = styled.button`
 
 export const Section = styled.div`
   position: relative;
-  margin: auto;
+  flex-wrap: nowrap;
 `;
 
 export const Title = styled.h1`
-  font-size: 32px;
-  line-height: 34px;
+  font-size: 24px;
+  line-height: 28px;
   color: #383838;
-  margin-bottom: 24px;
-  @media (max-device-width: 768px) {
-    font-size: 24px;
-    line-height: 28px;
+  margin-bottom: 16px;
+  @media (min-width: 768px) {
+    font-size: 32px;
+    line-height: 34px;
+    margin-bottom: 24px;
   }
 `;
 
@@ -52,7 +56,9 @@ export const Header = styled.header`
 
 export const Content = styled.div`
   display: flex;
-  margin-bottom: 48px;
+  margin-bottom: 40px;
   overflow: hidden;
-  flex-wrap: nowrap;
+  @media (min-width: 768px) {
+    margin-bottom: 48px;
+  }
 `;

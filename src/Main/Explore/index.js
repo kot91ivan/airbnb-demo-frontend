@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import pic1 from './explore/1.png';
-import pic2 from './explore/2.png';
-import pic3 from './explore/3.png';
-import {Title, Section, CardLink, Content} from './Styled';
+import pic1 from './1.png';
+import pic2 from './2.png';
+import pic3 from './3.png';
+import {Title} from '../Styled';
+import {Section, CardLink, Content} from '../Styled';
 
 const Card = styled.div`
   display: flex;

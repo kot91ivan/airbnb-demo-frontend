@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import Pic1 from './experiences/1.png';
-import Pic2 from './experiences/2.png';
-import Pic3 from './experiences/3.png';
-import Pic4 from './experiences/4.png';
-import Star from './Stars';
-import smallArrow from './arrows/smallArrow.svg';
-import {Title} from './Styled';
-import {Section, Arrow, LinkAll, CardLink, Header, Content} from './Styled';
+import Pic1 from './1.png';
+import Pic2 from './2.png';
+import Pic3 from './3.png';
+import Pic4 from './4.png';
+import Star from '../Stars';
+import smallArrow from '../Arrows/smallArrow.svg';
+import {Title} from '../Styled';
+import {Section, Arrow, LinkAll, CardLink, Header, Content} from '../Styled';
 
 const Price = styled.span`
   color: #383838;

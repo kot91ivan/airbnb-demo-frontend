@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import Pic1 from './popularReservations/popularReservations-1.png';
-import Pic2 from './popularReservations/popularReservations-2.png';
-import Pic3 from './popularReservations/popularReservations-3.png';
-import Pic4 from './popularReservations/popularReservations-4.png';
-import SmallArrow from './arrows/smallArrow.svg';
-import {Title} from './Styled';
-import {Section, Arrow, LinkAll, CardLink, Header, Content} from './Styled';
+import Pic1 from './popularReservations-1.png';
+import Pic2 from './popularReservations-2.png';
+import Pic3 from './popularReservations-3.png';
+import Pic4 from './popularReservations-4.png';
+import SmallArrow from '../Arrows/smallArrow.svg';
+import {Title} from '../Styled';
+import {Section, Arrow, LinkAll, CardLink, Header, Content} from '../Styled';
 
 const Price = styled.span`
   color: #383838;

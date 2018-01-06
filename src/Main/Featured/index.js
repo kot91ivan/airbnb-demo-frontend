@@ -1,14 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
-import Pic1 from './featured/1.png';
-import Pic2 from './featured/2.png';
-import Pic3 from './featured/3.png';
-import Pic4 from './featured/4.png';
-import Pic5 from './featured/5.png';
-import Pic6 from './featured/6.png';
-import SmallArrow from './arrows/smallArrow.svg';
-import {Title} from './Styled';
-import {Section, Arrow, LinkAll, CardLink, Header, Content} from './Styled';
+import Pic1 from './1.png';
+import Pic2 from './2.png';
+import Pic3 from './3.png';
+import Pic4 from './4.png';
+import Pic5 from './5.png';
+import Pic6 from './6.png';
+import SmallArrow from '../Arrows/smallArrow.svg';
+import {Title} from '../Styled';
+import {Section, Arrow, LinkAll, CardLink, Header, Content} from '../Styled';
 
 const Name = styled.p`
   color: #383838;
