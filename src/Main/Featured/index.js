@@ -1,14 +1,14 @@
-import React from 'react';
-import styled from 'styled-components';
-import Pic1 from './Featured-1.png';
-import Pic2 from './Featured-2.png';
-import Pic3 from './Featured-3.png';
-import Pic4 from './Featured-4.png';
-import Pic5 from './Featured-5.png';
-import Pic6 from './Featured-6.png';
-import smallArrow from '../Arrows/smallArrow.svg';
-import {Title} from '../Styled';
-import {Section, Arrow, LinkAll, CardLink, Header, Content} from '../Styled';
+import React from "react";
+import styled from "styled-components";
+import Pic1 from "./Featured-1.png";
+import Pic2 from "./Featured-2.png";
+import Pic3 from "./Featured-3.png";
+import Pic4 from "./Featured-4.png";
+import Pic5 from "./Featured-5.png";
+import Pic6 from "./Featured-6.png";
+import smallArrow from "../Arrows/smallArrow.svg";
+import { Title } from "../Styled";
+import { Section, Arrow, LinkAll, CardLink, Header, Content } from "../Styled";
 
 const Name = styled.p`
   color: #383838;
@@ -24,7 +24,7 @@ const Img = styled.img`
   width: 100%;
 `;
 export const BigArrow = Arrow.extend`
-  top: 48%;
+  top: 44%;
 `;
 
 export default () => (

@@ -1,14 +1,14 @@
-import React from 'react';
-import styled from 'styled-components';
-import {Title} from '../Styled';
-import {Section, Arrow, LinkAll, CardLink, Header, Content} from '../Styled';
-import Stars from '../Stars';
+import React from "react";
+import styled from "styled-components";
+import { Title } from "../Styled";
+import { Section, Arrow, LinkAll, CardLink, Header, Content } from "../Styled";
+import Stars from "../Stars";
 
-import Pic1 from './Experiences-1.png';
-import Pic2 from './Experiences-2.png';
-import Pic3 from './Experiences-3.png';
-import Pic4 from './Experiences-4.png';
-import smallArrow from '../Arrows/smallArrow.svg';
+import Pic1 from "./Experiences-1.png";
+import Pic2 from "./Experiences-2.png";
+import Pic3 from "./Experiences-3.png";
+import Pic4 from "./Experiences-4.png";
+import smallArrow from "../Arrows/smallArrow.svg";
 
 const Price = styled.span`
   color: #383838;
@@ -33,7 +33,7 @@ const Reviews = styled.p`
 `;
 
 export const BigArrow = Arrow.extend`
-  top: 45%;
+  top: 43%;
 `;
 
 export default () => (
@@ -54,7 +54,7 @@ export default () => (
         <CardLink href="#">
           <img src={Pic1} width="100%" alt="Forest Terapy" />
           <Name>
-            <Price>$29 </Price>Forest therapy{' '}
+            <Price>$29 </Price>Forest therapy{" "}
           </Name>
           <Reviews>
             <Stars /> 44 reviews
@@ -89,7 +89,7 @@ export default () => (
       </div>
       <div className="col-xs-6 col-sm-4 col-md-3">
         <CardLink href="#">
-          {' '}
+          {" "}
           <img src={Pic4} width="100%" alt="Salsa Night" />
           <Name>
             <Price>$50 </Price>Salsa Night

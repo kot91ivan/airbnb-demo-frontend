@@ -15,7 +15,7 @@ const Header = styled.header`
 
 const Logo = styled.img`
   height: 32px;
-  weight: 30px;
+  width: 30px;
 `;
 
 const Search = styled.input`

@@ -1,13 +1,13 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-import Arr from './Arrows/bigArrow.svg';
+import Arr from "./Arrows/bigArrow.svg";
 
 export const LinkAll = styled.a`
   text-decoration: none;
   color: #383838;
   font-size: 12px;
-  font-family: 'CircularAir', Arial, sans-serif;
+  font-family: "CircularAir", Arial, sans-serif;
   font-weight: normal;
   @media (min-width: 768px) {
     font-size: 14px;
@@ -22,7 +22,7 @@ export const Arrow = styled.button`
   border: 0.5px solid rgba(72, 72, 72, 0.2);
   border-radius: 20px;
   position: absolute;
-  left: 98%;
+  left: 97%;
   cursor: pointer;
   @media (min-width: 991px) {
     display: block;

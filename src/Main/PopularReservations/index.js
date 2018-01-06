@@ -1,13 +1,13 @@
-import React from 'react';
-import styled from 'styled-components';
-import {Title} from '../Styled';
-import {Section, Arrow, LinkAll, CardLink, Header, Content} from '../Styled';
+import React from "react";
+import styled from "styled-components";
+import { Title } from "../Styled";
+import { Section, Arrow, LinkAll, CardLink, Header, Content } from "../Styled";
 
-import Pic1 from './popularReservations-1.png';
-import Pic2 from './popularReservations-2.png';
-import Pic3 from './popularReservations-3.png';
-import Pic4 from './popularReservations-4.png';
-import SmallArrow from '../Arrows/smallArrow.svg';
+import Pic1 from "./popularReservations-1.png";
+import Pic2 from "./popularReservations-2.png";
+import Pic3 from "./popularReservations-3.png";
+import Pic4 from "./popularReservations-4.png";
+import SmallArrow from "../Arrows/smallArrow.svg";
 
 const Price = styled.span`
   color: #383838;
@@ -47,7 +47,7 @@ const Kind = styled.p`
 `;
 
 export const BigArrow = Arrow.extend`
-  top: 45%;
+  top: 41%;
 `;
 
 export default () => (

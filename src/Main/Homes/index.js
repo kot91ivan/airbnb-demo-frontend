@@ -1,13 +1,13 @@
-import React from 'react';
-import styled from 'styled-components';
-import {Title} from '../Styled';
-import {Section, Arrow, LinkAll, CardLink, Header, Content} from '../Styled';
-import Stars from '../Stars';
+import React from "react";
+import styled from "styled-components";
+import { Title } from "../Styled";
+import { Section, Arrow, LinkAll, CardLink, Header, Content } from "../Styled";
+import Stars from "../Stars";
 
-import Pic1 from './Homes-1.png';
-import Pic2 from './Homes-2.png';
-import Pic3 from './Homes-3.png';
-import SmallArrow from '../Arrows/smallArrow.svg';
+import Pic1 from "./Homes-1.png";
+import Pic2 from "./Homes-2.png";
+import Pic3 from "./Homes-3.png";
+import SmallArrow from "../Arrows/smallArrow.svg";
 
 const Price = styled.span`
   color: #383838;
@@ -28,7 +28,7 @@ const Name = styled.p`
 
 const Hosts = styled.p`
   color: #383838;
-  font-family: 'CircularAirLight', Arial, sans-serif;
+  font-family: "CircularAirLight", Arial, sans-serif;
   font-size: 12px;
   font-weight: normal;
   line-height: 14px;
@@ -47,7 +47,7 @@ const Beds = styled.p`
 `;
 
 export const BigArrow = Arrow.extend`
-  top: 42%;
+  top: 38%;
 `;
 
 export default () => (
