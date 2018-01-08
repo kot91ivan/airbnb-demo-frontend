@@ -3,6 +3,47 @@ import styled from "styled-components";
 
 import Arr from "./Arrows/bigArrow.svg";
 
+export const Img = styled.img`
+  width: 100%;
+`;
+
+export const Price = styled.span`
+  color: #383838;
+  font-weight: bold;
+  line-height: 18px;
+`;
+
+export const Name = styled.p`
+  color: #383838;
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: bold;
+  @media (min-width: 768px) {
+    font-size: 15px;
+    line-height: 18px;
+  }
+`;
+
+export const Beds = styled.p`
+  color: #383838;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: lighter;
+  @media (min-width: 768px) {
+    font-size: 15px;
+    line-height: 18px;
+  }
+`;
+
+export const Hosts = styled.p`
+  color: #383838;
+  font-family: "CircularAirLight", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 14px;
+  display: flex;
+`;
+
 export const LinkAll = styled.a`
   text-decoration: none;
   color: #383838;

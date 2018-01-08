@@ -1,10 +1,10 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-import Logo from './gray-logo.svg';
-import Facebook from './facebook.svg';
-import Twitter from './twitter.svg';
-import Instagram from './instagram.svg';
+import logo from "./gray-logo.svg";
+import facebook from "./facebook.svg";
+import twitter from "./twitter.svg";
+import instagram from "./instagram.svg";
 
 const Content = styled.div`
   display: flex;
@@ -43,23 +43,22 @@ const Nav = styled.nav`
 export default () => (
   <Content>
     <div className="col-xs-6 col-sm-3 col-md-3">
-      <img src={Logo} width="20px" height="22px" alt="Logo" />
+      <img src={logo} width="20px" height="22px" alt="Logo" />
       <Copyright>© Airbnb Inc.</Copyright>
     </div>
-    <div className="col-sm-offset-1 col-md-offset-5" />
-    <div className="col-xs-12 col-sm-5 col-md-4">
+    <div className="col-xs-12 col-sm-offset-1 col-sm-5 col-md-offset-5 col-md-4">
       <Nav>
         <Link href="#">Terms</Link>
         <Link href="#">Privacy</Link>
         <Link href="#">Site Map</Link>
         <Link href="#">
-          <img src={Facebook} width="24px" height="24px" alt="Facebook" />
+          <img src={facebook} width="24px" height="24px" alt="Facebook" />
         </Link>
         <Link href="#">
-          <img src={Twitter} width="24px" height="24px" alt="Twitter" />
+          <img src={twitter} width="24px" height="24px" alt="Twitter" />
         </Link>
         <Link href="#">
-          <img src={Instagram} width="24px" height="24px" alt="Instagram" />
+          <img src={instagram} width="24px" height="24px" alt="Instagram" />
         </Link>
       </Nav>
     </div>

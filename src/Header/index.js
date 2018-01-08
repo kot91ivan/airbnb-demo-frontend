@@ -62,8 +62,7 @@ export default () => (
     <div className="col-sm-3 col-md-5">
       <Search placeholder="Try &quot;Miami&quot;" name="search" type="text" />
     </div>
-    <div className="col-md-offset-2" />
-    <div className="col-md-3">
+    <div className="col-md-offset-2 col-md-3">
       <Nav />
     </div>
   </Header>

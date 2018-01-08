@@ -1,13 +1,14 @@
-import React from 'react';
-import styled from 'styled-components';
-import {Title} from '../Styled';
-import {Section, CardLink, Content} from '../Styled';
+import React from "react";
+import styled from "styled-components";
+import { Title } from "../Styled";
+import { Section, Content } from "../Styled";
+import Card from "./Card";
 
-import pic1 from './Explore-1.png';
-import pic2 from './Explore-2.png';
-import pic3 from './Explore-3.png';
+import pic1 from "./Explore-1.png";
+import pic2 from "./Explore-2.png";
+import pic3 from "./Explore-3.png";
 
-const Card = styled.div`
+export const CardWrap = styled.div`
   display: flex;
   flex-direction: column;
   border: 1px solid rgba(72, 72, 72, 0.2);
@@ -22,7 +23,7 @@ const Card = styled.div`
   }
 `;
 
-const Name = styled.p`
+export const Name = styled.p`
   color: #383838;
   font-weight: bold;
   font-size: 12px;
@@ -34,12 +35,14 @@ const Name = styled.p`
     line-height: 20px;
   }
 `;
-const Img = styled.img`
+
+export const Img = styled.img`
   width: 100%;
   @media (min-width: 768px) {
     width: auto;
   }
 `;
+
 export default () => (
   <Section>
     <div className="col-sm-5 col-md-4">
@@ -47,28 +50,13 @@ export default () => (
     </div>
     <Content>
       <div className="col-xs-6 col-sm-5 col-md-4">
-        <CardLink href="#">
-          <Card>
-            <Img src={pic1} alt="homes" />
-            <Name>Homes</Name>
-          </Card>
-        </CardLink>
+        <Card img={pic1} title="Homes" name="Homes" />
       </div>
       <div className="col-xs-6 col-sm-5 col-md-4">
-        <CardLink href="#">
-          <Card>
-            <Img src={pic2} alt="Experiences" />
-            <Name>Experiences</Name>
-          </Card>
-        </CardLink>
+        <Card img={pic2} title="Experinces" name="Experinces" />
       </div>
       <div className="col-xs-6 col-sm-5 col-md-4">
-        <CardLink href="#">
-          <Card>
-            <Img src={pic3} alt="Restaurants" />
-            <Name>Restaurants</Name>
-          </Card>
-        </CardLink>
+        <Card img={pic3} title="Restaurant" name="Restaurant" />
       </div>
     </Content>
   </Section>
