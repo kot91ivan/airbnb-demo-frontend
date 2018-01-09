@@ -50,7 +50,7 @@ const Logo = styled.div`
 
 export default () => (
   <Header>
-    <div className="col-sm-3 col-md-2">
+    <div className="col-sm-3 col-md-1">
       <Logo>
         <Img src={logo} />
         <DropdownMenu>
