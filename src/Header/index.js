@@ -7,10 +7,15 @@ import search from "./search.svg";
 import downArrow from "./down.svg";
 
 const Header = styled.header`
-  display: flex;
-  padding-top: 23px;
-  margin-bottom: 20px;
-  align-items: center;
+  padding: 15px;
+  margin-bottom: 50px;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  z-index: 1;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 0 1px rgba(72, 72, 72, 0.5);
 `;
 
 const Img = styled.img`
@@ -23,9 +28,11 @@ const Search = styled.input`
   border: 1px solid rgba(72, 72, 72, 0.2);
   border-radius: 4px;
   background: #ffffff url(${search}) 2.5% 50% no-repeat;
-  padding: 14px 40px;
+  padding: 12px 40px;
   font-size: 14px;
   font-family: "CircularAirBook", Arial, sans-serif;
+  width: 100px;
+  box-shadow: 0 0 1px rgba(56, 56, 56, 0.2);
   @media (min-width: 768px) {
     font-size: 16px;
     line-height: 24px;
@@ -38,7 +45,6 @@ const DropdownMenu = styled.button`
   border: none;
   cursor: pointer;
   background: none;
-  padding: 20px;
   @media (min-width: 991px) {
     display: none;
   }
@@ -50,20 +56,28 @@ const Logo = styled.div`
 
 export default () => (
   <Header>
-    <div className="col-sm-3 col-md-1">
-      <Logo>
-        <Img src={logo} />
-        <DropdownMenu>
-          <img src={downArrow} alt="Menu Arrow" />
-        </DropdownMenu>
-      </Logo>
-    </div>
+    <div className="container">
+      <div className="row middle-md">
+        <div className="col-sm-3 col-md-1">
+          <Logo>
+            <Img src={logo} />
+            <DropdownMenu>
+              <img src={downArrow} alt="Menu Arrow" />
+            </DropdownMenu>
+          </Logo>
+        </div>
 
-    <div className="col-sm-3 col-md-5">
-      <Search placeholder="Try &quot;Miami&quot;" name="search" type="text" />
-    </div>
-    <div className="col-md-offset-2 col-md-3">
-      <Nav />
+        <div className="col-sm-3 col-md-5">
+          <Search
+            placeholder="Try &quot;Miami&quot;"
+            name="search"
+            type="text"
+          />
+        </div>
+        <div className="col-md-offset-2 col-md-offset-1">
+          <Nav />
+        </div>
+      </div>
     </div>
   </Header>
 );

@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const Nav = styled.nav`
   display: none;
@@ -13,9 +13,9 @@ const Nav = styled.nav`
 const Link = styled.a`
   text-decoration: none;
   color: #383838;
-  margin: 8px;
+  margin: 10px 20px;
   padding: 0;
-  font-family: 'CircularAirBook', Arial, sans-serif;
+  font-family: "CircularAirBook", Arial, sans-serif;
   font-size: 14px;
   font-weight: normal;
 `;

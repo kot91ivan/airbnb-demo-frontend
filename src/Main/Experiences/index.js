@@ -37,55 +37,57 @@ export const BigArrow = Arrow.extend`
 `;
 
 export default () => (
-  <Section>
-    <Header>
-      <div className="col-xs-4 col-sm-4 col-md-3">
-        <Title>Experiences</Title>
-      </div>
-      <div className="col-xs-offset-5 col-xs-3 col-sm-offset-6 col-sm-2 col-md-offset-8 col-md-1">
-        <LinkAll href="#">
-          See all <img src={smallArrow} alt="arrow" />
-        </LinkAll>
-      </div>
-    </Header>
-    <Content>
-      <div className="col-xs-6 col-sm-4 col-md-3">
-        <Card
-          img={pic1}
-          alt="Forest Terapy"
-          name="Forest Terapy"
-          price={29}
-          reviews={44}
-        />
-      </div>
-      <div className="col-xs-6 col-sm-4 col-md-3">
-        <Card
-          img={pic2}
-          alt="Whale Watching"
-          name="Whale Watching"
-          price={69}
-          reviews={40}
-        />
-      </div>
-      <div className="col-xs-6 col-sm-4 col-md-3">
-        <Card
-          img={pic3}
-          alt="Table Mountain Summit"
-          name="Table Mountain Summit, Cable Car Down"
-          price={70}
-          reviews={29}
-        />
-      </div>
-      <div className="col-xs-6 col-sm-4 col-md-3">
-        <Card
-          img={pic4}
-          alt="Salsa Night"
-          name="Salsa Night"
-          price={50}
-          reviews={50}
-        />
-      </div>
-      <BigArrow />
-    </Content>
-  </Section>
+  <div className="container">
+    <Section>
+      <Header>
+        <div className="col-xs-4 col-sm-4 col-md-3">
+          <Title>Experiences</Title>
+        </div>
+        <div className="col-xs-offset-5 col-xs-3 col-sm-offset-6 col-sm-2 col-md-offset-8 col-md-1">
+          <LinkAll href="#">
+            See all <img src={smallArrow} alt="arrow" />
+          </LinkAll>
+        </div>
+      </Header>
+      <Content>
+        <div className="col-xs-6 col-sm-4 col-md-3">
+          <Card
+            img={pic1}
+            alt="Forest Terapy"
+            name="Forest Terapy"
+            price={29}
+            reviews={44}
+          />
+        </div>
+        <div className="col-xs-6 col-sm-4 col-md-3">
+          <Card
+            img={pic2}
+            alt="Whale Watching"
+            name="Whale Watching"
+            price={69}
+            reviews={40}
+          />
+        </div>
+        <div className="col-xs-6 col-sm-4 col-md-3">
+          <Card
+            img={pic3}
+            alt="Table Mountain Summit"
+            name="Table Mountain Summit, Cable Car Down"
+            price={70}
+            reviews={29}
+          />
+        </div>
+        <div className="col-xs-6 col-sm-4 col-md-3">
+          <Card
+            img={pic4}
+            alt="Salsa Night"
+            name="Salsa Night"
+            price={50}
+            reviews={50}
+          />
+        </div>
+        <BigArrow />
+      </Content>
+    </Section>
+  </div>
 );

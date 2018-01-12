@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import { Title } from "../Styled";
 import { Section, Content } from "../Styled";
 import Card from "./Card";
@@ -44,20 +45,24 @@ export const Img = styled.img`
 `;
 
 export default () => (
-  <Section>
-    <div className="col-sm-5 col-md-4">
-      <Title>Explore Airbnb</Title>
-    </div>
-    <Content>
-      <div className="col-xs-6 col-sm-5 col-md-4">
-        <Card img={pic1} title="Homes" name="Homes" />
+  <div className="container">
+    <Section>
+      <div className="col-sm-5 col-md-4">
+        <Title>Explore Airbnb</Title>
       </div>
-      <div className="col-xs-6 col-sm-5 col-md-4">
-        <Card img={pic2} title="Experinces" name="Experinces" />
-      </div>
-      <div className="col-xs-6 col-sm-5 col-md-4">
-        <Card img={pic3} title="Restaurant" name="Restaurant" />
-      </div>
-    </Content>
-  </Section>
+      <Content>
+        <div className="col-xs-6 col-sm-5 col-md-4">
+          <Link to="/homes" style={{ textDecoration: "none" }}>
+            <Card img={pic1} title="Homes" name="Homes" />
+          </Link>
+        </div>
+        <div className="col-xs-6 col-sm-5 col-md-4">
+          <Card img={pic2} title="Experinces" name="Experinces" />
+        </div>
+        <div className="col-xs-6 col-sm-5 col-md-4">
+          <Card img={pic3} title="Restaurant" name="Restaurant" />
+        </div>
+      </Content>
+    </Section>
+  </div>
 );

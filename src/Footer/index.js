@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
-import Bottom from './Bottom';
+import React from "react";
+import styled from "styled-components";
+import Bottom from "./Bottom";
 
-import InputArrow from './icondown.svg';
+import InputArrow from "./icondown.svg";
 
 const Content = styled.div`
   margin-top: 24px;
@@ -21,7 +21,7 @@ const Language = styled.select`
   padding: 12px 16px;
   width: 229px;
   margin-bottom: 16px;
-  font-family: 'CircularAirLight', Arial, sans-serif;
+  font-family: "CircularAirLight", Arial, sans-serif;
   cursor: pointer;
 
   @media (min-width: 768px) {
@@ -58,7 +58,7 @@ const Link = styled.a`
   font-size: 12px;
   line-height: 14px;
   margin-bottom: 8px;
-  font-family: 'CircularAirLight', Arial, sans-serif;
+  font-family: "CircularAirLight", Arial, sans-serif;
   @media (min-width: 991px) {
     font-size: 15px;
     line-height: 18px;
@@ -83,7 +83,7 @@ const Selects = styled.div`
 `;
 
 export default () => (
-  <div>
+  <div className="container">
     <Content>
       <div className="col-xs-12 col-md-3">
         <Selects>

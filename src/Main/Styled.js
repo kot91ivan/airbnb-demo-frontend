@@ -103,5 +103,6 @@ export const Content = styled.div`
   overflow-x: auto;
   @media (min-width: 768px) {
     margin-bottom: 48px;
+    flex-wrap: wrap;
   }
 `;

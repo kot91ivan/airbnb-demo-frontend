@@ -3,7 +3,7 @@ import Stars from "../Stars";
 import { CardLink, Img, Price, Name, Beds, Hosts } from "../Styled";
 
 export default props => (
-  <CardLink href="#">
+  <CardLink href={props.link}>
     <Img src={props.Img} alt={props.title} />
 
     <Name>

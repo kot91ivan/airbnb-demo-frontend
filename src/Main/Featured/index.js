@@ -32,37 +32,39 @@ export const BigArrow = Arrow.extend`
 `;
 
 export default () => (
-  <Section>
-    <Header>
-      <div className="col-xs-8 col-sm-6 col-md-6">
-        <Title>Featured destinations</Title>
-      </div>
-      <div className="col-xs-offset-1 col-xs-3  col-md-offset-5 col-md-1">
-        <LinkAll href="#">
-          See all <img src={smallArrow} alt="arrow" />
-        </LinkAll>
-      </div>
-    </Header>
-    <Content>
-      <div className="col-xs-4 col-sm-3 col-md-2">
-        <Card img={pic1} name="Paris" alt="Paris" />
-      </div>
-      <div className="col-xs-4 col-sm-3 col-md-2">
-        <Card img={pic2} name="Miami" alt="Miami" />
-      </div>
-      <div className="col-xs-4 col-sm-3 col-md-2">
-        <Card img={pic3} name="Tokyo" alt="Tokyo" />
-      </div>
-      <div className="col-xs-4 col-sm-3 col-md-2">
-        <Card img={pic4} name="Cape Town" alt="Cape Town" />
-      </div>
-      <div className="col-xs-4 col-sm-3 col-md-2">
-        <Card img={pic5} name="Seoul" alt="Seoul" />
-      </div>
-      <div className="col-xs-4 col-sm-3 col-md-2">
-        <Card img={pic6} name="Los Angeles" alt="Los Angeles" />
-      </div>
-      <BigArrow />
-    </Content>
-  </Section>
+  <div className="container">
+    <Section>
+      <Header>
+        <div className="col-xs-8 col-sm-6 col-md-6">
+          <Title>Featured destinations</Title>
+        </div>
+        <div className="col-xs-offset-1 col-xs-3  col-md-offset-5 col-md-1">
+          <LinkAll href="#">
+            See all <img src={smallArrow} alt="arrow" />
+          </LinkAll>
+        </div>
+      </Header>
+      <Content>
+        <div className="col-xs-4 col-sm-3 col-md-2">
+          <Card img={pic1} name="Paris" alt="Paris" />
+        </div>
+        <div className="col-xs-4 col-sm-3 col-md-2">
+          <Card img={pic2} name="Miami" alt="Miami" />
+        </div>
+        <div className="col-xs-4 col-sm-3 col-md-2">
+          <Card img={pic3} name="Tokyo" alt="Tokyo" />
+        </div>
+        <div className="col-xs-4 col-sm-3 col-md-2">
+          <Card img={pic4} name="Cape Town" alt="Cape Town" />
+        </div>
+        <div className="col-xs-4 col-sm-3 col-md-2">
+          <Card img={pic5} name="Seoul" alt="Seoul" />
+        </div>
+        <div className="col-xs-4 col-sm-3 col-md-2">
+          <Card img={pic6} name="Los Angeles" alt="Los Angeles" />
+        </div>
+        <BigArrow />
+      </Content>
+    </Section>
+  </div>
 );

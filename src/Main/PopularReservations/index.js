@@ -52,55 +52,57 @@ export const BigArrow = Arrow.extend`
 `;
 
 export default () => (
-  <Section>
-    <Header>
-      <div className="col-xs-9 col-sm-5 col-md-9">
-        <Title>Popular reservations around the world</Title>
-      </div>
-      <div className="col-xs-3 col-sm-offset-1 col-sm-2 col-md-offset-2 col-md-1">
-        <LinkAll href="#">
-          See all <img src={smallArrow} alt="arrow" />
-        </LinkAll>
-      </div>
-    </Header>
-    <Content>
-      <div className="col-xs-6 col-sm-4 col-md-3">
-        <Card
-          img={pic1}
-          alt="Chumley’s"
-          kind="Speakeasy"
-          name="Chumley’s"
-          price={60}
-        />
-      </div>
-      <div className="col-xs-6 col-sm-4 col-md-3">
-        <Card
-          img={pic2}
-          alt="Hanjan"
-          kind="Korean gastropub"
-          name="Hanjan"
-          price={50}
-        />
-      </div>
-      <div className="col-xs-6 col-sm-4 col-md-3">
-        <Card
-          img={pic3}
-          alt="Prime Meats"
-          kind="German american"
-          name="Prime Meats"
-          price={55}
-        />
-      </div>
-      <div className="col-xs-6 col-sm-4 col-md-3">
-        <Card
-          img={pic4}
-          alt="Seaprice"
-          kind="Fine seafood"
-          name="Seaprice"
-          price={70}
-        />
-      </div>
-      <BigArrow />
-    </Content>
-  </Section>
+  <div className="container">
+    <Section>
+      <Header>
+        <div className="col-xs-9 col-sm-5 col-md-9">
+          <Title>Popular reservations around the world</Title>
+        </div>
+        <div className="col-xs-3 col-sm-offset-1 col-sm-2 col-md-offset-2 col-md-1">
+          <LinkAll href="#">
+            See all <img src={smallArrow} alt="arrow" />
+          </LinkAll>
+        </div>
+      </Header>
+      <Content>
+        <div className="col-xs-6 col-sm-4 col-md-3">
+          <Card
+            img={pic1}
+            alt="Chumley’s"
+            kind="Speakeasy"
+            name="Chumley’s"
+            price={60}
+          />
+        </div>
+        <div className="col-xs-6 col-sm-4 col-md-3">
+          <Card
+            img={pic2}
+            alt="Hanjan"
+            kind="Korean gastropub"
+            name="Hanjan"
+            price={50}
+          />
+        </div>
+        <div className="col-xs-6 col-sm-4 col-md-3">
+          <Card
+            img={pic3}
+            alt="Prime Meats"
+            kind="German american"
+            name="Prime Meats"
+            price={55}
+          />
+        </div>
+        <div className="col-xs-6 col-sm-4 col-md-3">
+          <Card
+            img={pic4}
+            alt="Seaprice"
+            kind="Fine seafood"
+            name="Seaprice"
+            price={70}
+          />
+        </div>
+        <BigArrow />
+      </Content>
+    </Section>
+  </div>
 );
