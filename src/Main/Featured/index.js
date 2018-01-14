@@ -17,6 +17,7 @@ export const Name = styled.p`
   font-size: 12px;
   line-height: 14px;
   font-weight: normal;
+  margin-top: 8px;
   @media (min-width: 768px) {
     font-size: 15px;
     line-height: 18px;

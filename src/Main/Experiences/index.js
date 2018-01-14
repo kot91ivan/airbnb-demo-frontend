@@ -18,8 +18,8 @@ export const Price = styled.span`
 export const Name = styled.p`
   color: #383838;
   font-size: 13px;
-  line-height: 15px;
-  font-weight: normal;
+  margin: 8px 0 6px 0;
+  font-family: "CircularAirLight", Arial;
   @media (min-width: 768px) {
     font-size: 15px;
     line-height: 18px;

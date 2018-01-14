@@ -32,7 +32,7 @@ export default () => (
       <div className="row">
         <Dates />
         <FilterButton>Guests</FilterButton>
-        <div className="col-md">
+        <div>
           <div className="hidden-xs hidden-sm hidden-md">
             <FilterButton>Room type</FilterButton>
             <FilterButton>Price</FilterButton>

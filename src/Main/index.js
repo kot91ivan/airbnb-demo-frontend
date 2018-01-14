@@ -8,9 +8,7 @@ import Featured from "./Featured";
 import Footer from "../Footer";
 
 const Main = styled.main`
-  border-top: 1px solid rgba(72, 72, 72, 0.1);
-
-  margin-top: 75px;
+  margin-top: 125px;
 `;
 export default () => (
   <Main>

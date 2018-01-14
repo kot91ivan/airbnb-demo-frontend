@@ -14,12 +14,13 @@ const LinkActive = styled.a`
   padding: 5px 13px;
   width: 32px;
   height: 32px;
-
+  cursor: pointer;
   text-align: center;
 `;
 const Link = styled.a`
   color: #0f7276;
   margin: 15px;
+  cursor: pointer;
 `;
 
 const LinkArrow = styled.a`

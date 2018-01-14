@@ -21,6 +21,7 @@ const Language = styled.select`
   padding: 12px 16px;
   width: 229px;
   margin-bottom: 16px;
+  margin-right: 5px;
   font-family: "CircularAirLight", Arial, sans-serif;
   cursor: pointer;
 
@@ -58,7 +59,7 @@ const Link = styled.a`
   font-size: 12px;
   line-height: 14px;
   margin-bottom: 8px;
-  font-family: "CircularAirLight", Arial, sans-serif;
+  font-family: "CircularAirBook", Arial, sans-serif;
   @media (min-width: 991px) {
     font-size: 15px;
     line-height: 18px;

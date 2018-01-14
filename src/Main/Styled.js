@@ -18,6 +18,8 @@ export const Name = styled.p`
   font-size: 13px;
   line-height: 15px;
   font-weight: bold;
+  margin-top: 8px;
+  margin-bottom: 0px;
   @media (min-width: 768px) {
     font-size: 15px;
     line-height: 18px;
@@ -28,17 +30,21 @@ export const Beds = styled.p`
   color: #383838;
   font-size: 12px;
   line-height: 14px;
-  font-weight: lighter;
+  margin-top: 8px;
+  margin-bottom: 0px;
+  font-family: "CircularAirLight", Arial, sans-serif;
   @media (min-width: 768px) {
     font-size: 15px;
     line-height: 18px;
+    margin-top: 8px;
   }
 `;
 
 export const Hosts = styled.p`
   color: #383838;
-  font-family: "CircularAirLight", Arial, sans-serif;
+  font-family: "CircularAirBook", Arial, sans-serif;
   font-size: 12px;
+  margin-top: 6px;
   font-weight: normal;
   line-height: 14px;
   display: flex;

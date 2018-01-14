@@ -20,8 +20,8 @@ const Wrap = styled.div`
 const Wrapper = styled.div`
   right: 0;
   bottom: 0;
-  width: 35%;
-  height: 76%;
+  width: 33%;
+  height: 100%;
   margin: 0px;
   padding: 0px;
   position: fixed;
@@ -36,7 +36,7 @@ const Rentals = styled.p`
 
 const Text = styled.p`
   color: #363636;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 19px;
   padding: 30px 0 10px 0;
 `;
@@ -46,8 +46,8 @@ export default () => (
     <Filters />
     <div className="container">
       <div className="row">
-        <div className="col-xs-12 col-sm-12 col-md-8">
-          <div className="row center-xs center-sm">
+        <div className="col-xs-12 col-sm-12 col-md-12 col-lg-8">
+          <div className="row ">
             <div className="col-xs-12 col-sm-6">
               <Card
                 Img={Pic1}

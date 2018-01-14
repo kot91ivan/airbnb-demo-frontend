@@ -31,11 +31,15 @@ const Search = styled.input`
   padding: 12px 40px;
   font-size: 14px;
   font-family: "CircularAirBook", Arial, sans-serif;
-  width: 100px;
+  width: 100%;
   box-shadow: 0 0 1px rgba(56, 56, 56, 0.2);
   @media (min-width: 768px) {
     font-size: 16px;
     line-height: 24px;
+    width: 432px;
+    margin-left: 25px;
+  }
+  @media (min-width: 991px) {
     width: 350px;
   }
 `;
@@ -45,6 +49,7 @@ const DropdownMenu = styled.button`
   border: none;
   cursor: pointer;
   background: none;
+
   @media (min-width: 991px) {
     display: none;
   }
@@ -58,7 +63,7 @@ export default () => (
   <Header>
     <div className="container">
       <div className="row middle-md">
-        <div className="col-sm-3 col-md-1">
+        <div className="col-sm-2 col-md-1">
           <Logo>
             <Img src={logo} />
             <DropdownMenu>
@@ -74,7 +79,7 @@ export default () => (
             type="text"
           />
         </div>
-        <div className="col-md-offset-2 col-md-offset-1">
+        <div className="col-md-offset-1 col-lg-offset-1 col-md-6">
           <Nav />
         </div>
       </div>
