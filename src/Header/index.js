@@ -31,7 +31,7 @@ const Search = styled.input`
   padding: 12px 40px;
   font-size: 14px;
   font-family: "CircularAirBook", Arial, sans-serif;
-  width: 100%;
+  width: 120px;
   box-shadow: 0 0 1px rgba(56, 56, 56, 0.2);
   @media (min-width: 768px) {
     font-size: 16px;

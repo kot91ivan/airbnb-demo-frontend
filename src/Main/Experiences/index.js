@@ -33,7 +33,7 @@ export const Reviews = styled.p`
 `;
 
 export const BigArrow = Arrow.extend`
-  top: 43%;
+  top: 42%;
 `;
 
 export default () => (
